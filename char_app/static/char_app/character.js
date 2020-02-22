@@ -3,7 +3,7 @@ $('.stat').bind('input', function()
       var inputName = $(this).attr('name')
       var mod = parseInt($(this).val()) - 10
 
-      if (mod % 2 == 0)
+      if (mod % 2 === 0) 
         mod = mod / 2
       else
         mod = (mod - 1) / 2
