@@ -7,7 +7,7 @@
     <script type="text/javascript" src="{% static 'char_app/character.js' %}"></script>
 </head>
 <body>
-<form class="charsheet">
+<form class="charsheet" id="charsheet">
     <header>
         <section class="charname">
             <label>Character Name</label><input name="charname" placeholder="Thoradin Fireforge"/>
@@ -438,5 +438,8 @@
         </section>
     </main>
 </form>
+<div style="text-align: center">
+<button type="submit" form="charsheet" class="butt">Send</button>
+</div>
 </body>
 </html>
