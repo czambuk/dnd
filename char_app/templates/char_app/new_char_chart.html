@@ -1,12 +1,17 @@
+{% extends 'char_app/base.html' %}
+
 <!DOCTYPE html>
 <html>
 <head>
+    {% block statics %}
     {% load static %}
 
     <link rel="stylesheet" type="text/css" href="{% static 'char_app/character.css' %}">
     <script type="text/javascript" src="{% static 'char_app/character.js' %}"></script>
+    {% endblock statics %}
 </head>
 <body>
+{% block content %}
 <form class="charsheet" action="" method="post" id="charsheet">{% csrf_token %}
     <header>
         <section class="charname">
@@ -438,6 +443,11 @@
         </section>
     </main>
 </form>
-<button class="subbutton" type="submit" form="charsheet">Send!</button>
+<div style="text-align: center">
+    <button type="submit" form="charsheet" class="butt">Add</button>
+</div>
+{% endblock content %}
 </body>
 </html>
+
+

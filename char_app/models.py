@@ -11,10 +11,10 @@ class Character(models.Model):
     name = models.CharField(max_length=64)
     basic_class = models.CharField(max_length=32)
     additional_class = models.CharField(max_length=32,
-                                        null=True,
+                                     null=True,
                                         default=None
                                         )
-    basic_level = models.IntegerField()
+    basic_level = models.IntegerField(default=1)
     additional_level = models.IntegerField(null=True,
                                            default=None
                                            )

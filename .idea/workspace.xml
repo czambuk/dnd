@@ -7,6 +7,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="dnd" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -18,22 +28,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/char_app/templates/char_app" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2413442" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tegru\PycharmProjects\dnd\char_app\templates\char_app" />
-      <recent name="C:\Users\tegru\PycharmProjects\dnd\dnd\char_app\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tegru\PycharmProjects\dnd\char_app\templates\char_app" />
       <recent name="C:\Users\tegru\PycharmProjects\dnd\char_app\templates" />
       <recent name="C:\Users\tegru\PycharmProjects\dnd\char_app\static\char_app" />
       <recent name="C:\Users\tegru\PycharmProjects\dnd\dnd\char_app\templates\html" />
       <recent name="C:\Users\tegru\PycharmProjects\dnd" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tegru\PycharmProjects\dnd\char_app\templates\char_app" />
+      <recent name="C:\Users\tegru\PycharmProjects\dnd\dnd\char_app\templates" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -50,25 +61,41 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="72" y="182" key="#Menus_and_Toolbars" timestamp="1582469876446">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="72" y="182" key="#Menus_and_Toolbars/0.0.1920.1040@0.0.1920.1040" timestamp="1582469876446" />
     <state x="552" y="179" key="#Notifications" timestamp="1582445595415">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1582445595415" />
+    <state x="552" y="178" key="#Servers" timestamp="1582469425206">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Servers/0.0.1920.1040@0.0.1920.1040" timestamp="1582469425206" />
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582134356658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582134356658" />
+    <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582469487710">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582469487710" />
     <state x="777" y="233" key="FileChooserDialogImpl" timestamp="1582445453175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="233" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582445453175" />
-    <state x="486" y="118" width="1022" height="718" key="SettingsEditor" timestamp="1582445605192">
+    <state x="486" y="118" width="1022" height="718" key="SettingsEditor" timestamp="1582469902265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="486" y="118" width="1022" height="718" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582445605192" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1582459172270">
+    <state x="486" y="118" width="1022" height="718" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582469902265" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1582469956898">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582459172270" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582469956898" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582469166949">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582469166949" />
   </component>
 </project>
