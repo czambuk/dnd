@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from char_app.views import CharacterSheet
+from char_app.views import ViewCharacterSheet, NewCharacterSheet
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('character/', CharacterSheet.as_view()),
+    # My urls
+    path('view_character/', ViewCharacterSheet.as_view()),
+    path('new_character/', NewCharacterSheet.as_view()),
 ]

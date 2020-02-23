@@ -4,15 +4,20 @@ from django.http import HttpResponse
 from django.views import View
 
 
-class CharacterSheet(View):
+class ViewCharacterSheet(View):
     def get(self, request):
         return TemplateResponse(
             request,
-            "char_app/char_chart.html",
+            "char_app/view_char_chart.html",
         )
 
-    def post(self, request):
+
+class NewCharacterSheet(View):
+    def get(self, request):
         return TemplateResponse(
             request,
-            "char_app/char_chart.html",
+            "char_app/new_char_chart.html"
         )
+
+    # def post(self,request):
+    #     return
