@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        {{ page_title|default:"Untitled Page" }}
+        {% endblock title %}
+    </title>
+    {% block statics %}
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'char_app/character.css' %}">
+    <script type="text/javascript" src="{% static 'char_app/character.js' %}"></script>
+    {% endblock statics %}
+</head>
+<body>
+    {% block content %}
+    <div class="grid-container">
+        <div class="charmenu">New character</div>
+        <div class="charmenu">View character</div>
+        <div class="charmenu">View all</div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

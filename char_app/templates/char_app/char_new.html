@@ -1,13 +1,21 @@
+{% extends 'char_app/char_base.html' %}
+
 <!DOCTYPE html>
 <html>
+<title>
+
+</title>
 <head>
+    {% block statics %}
     {% load static %}
 
     <link rel="stylesheet" type="text/css" href="{% static 'char_app/character.css' %}">
     <script type="text/javascript" src="{% static 'char_app/character.js' %}"></script>
+    {% endblock statics %}
 </head>
 <body>
-<form class="charsheet" id="charsheet">
+{% block content %}
+<form class="charsheet" action="" method="post" id="charsheet">{% csrf_token %}
     <header>
         <section class="charname">
             <label>Character Name</label><input name="charname" placeholder="Thoradin Fireforge"/>
@@ -438,5 +446,11 @@
         </section>
     </main>
 </form>
+<div style="text-align: center">
+    <button type="submit" form="charsheet" class="butt">Add</button>
+</div>
+{% endblock content %}
 </body>
 </html>
+
+

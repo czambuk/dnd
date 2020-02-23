@@ -6,18 +6,28 @@ from .models import Player, Character, Campaign
 
 
 class ViewCharacterSheet(View):
-    def get(self, request):
+    def get(self, request, id):
+        if Character.objects.get(id=id) is not None:
+            character = Character.objects.get(id=id)
+            title = character.name
+        else:
+            title = "Error"
+        dict = {"page_title": title}
         return TemplateResponse(
             request,
-            "char_app/view_char_chart.html",
+            "char_app/char_view.html",
+            context=dict,
         )
 
 
 class NewCharacterSheet(View):
     def get(self, request):
+        title = f"New PC"
+        dict = {"page_title": title}
         return TemplateResponse(
             request,
-            "char_app/new_char_chart.html"
+            "char_app/char_new.html",
+            context=dict,
         )
 
     def post(self, request):
@@ -40,7 +50,7 @@ class NewCharacterSheet(View):
 
         return TemplateResponse(
             request,
-            "char_app/new_char_chart.html",
+            "char_app/char_new.html",
         )
 
 
@@ -48,5 +58,5 @@ class HomePage(View):
     def get(self, request):
         return TemplateResponse(
             request,
-            "char_app/base.html",
+            "char_app/char_base.html",
         )

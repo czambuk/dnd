@@ -21,6 +21,34 @@
   margin: 4px 2px;
   cursor: pointer;
 }
+
+.grid-container {
+  display: grid;
+  width: 75%;
+  height: 150px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  background-color: rgba(0, 0, 0, .75);
+  padding: 10px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.charmenu {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 20px 0;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+
 textarea {
   font-size: 12px;
   text-align: left;
