@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>
         {% block title %}
-        {{ page_title|default:"Untitled Page" }}
+        {{ page_title|default:"Main site" }}
         {% endblock title %}
     </title>
     {% block statics %}
@@ -17,9 +17,15 @@
 <body>
     {% block content %}
     <div class="grid-container">
-        <div class="charmenu">New character</div>
-        <div class="charmenu">View character</div>
-        <div class="charmenu">View all</div>
+        <div class="charmenu">
+            <a href="/new_character">New character</a>
+        </div>
+        <div class="charmenu">
+            <a href="/view_character">View character</a>
+        </div>
+        <div class="charmenu">
+            <a href="/list_character">View all</a>
+        </div>
     </div>
     {% endblock content %}
 </body>
