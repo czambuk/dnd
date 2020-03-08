@@ -7,26 +7,14 @@
         {{ page_title|default:"Main site" }}
         {% endblock title %}
     </title>
-    {% block statics %}
-    {% load static %}
-
-    <link rel="stylesheet" type="text/css" href="{% static 'char_app/character.css' %}">
-    <script type="text/javascript" src="{% static 'char_app/character.js' %}"></script>
-    {% endblock statics %}
 </head>
 <body>
-    {% block content %}
-    <div class="grid-container">
-        <div class="charmenu">
-            <a href="/new_character">New character</a>
-        </div>
-        <div class="charmenu">
-            <a href="/view_character">View character</a>
-        </div>
-        <div class="charmenu">
-            <a href="/list_character">View all</a>
-        </div>
-    </div>
-    {% endblock content %}
+{% block content %}
+ROBOCZO
+{% endblock content %}
 </body>
+{% block static %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'char_app/character.css' %}">
+{% endblock static %}
 </html>

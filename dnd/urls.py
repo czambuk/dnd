@@ -15,12 +15,24 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from char_app.views import ViewCharacterSheet, NewCharacterSheet, HomePage
+from char_app.views import ViewCharacterSheet, NewCharacterSheet
+from landing_page.views import HomePage
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # My urls
-    path('', HomePage.as_view()),
+
+    # char_app specifically
     path('view_character/<int:id>', ViewCharacterSheet.as_view()),
+
+    # landing_page links
+    path('', HomePage.as_view()),  # main site
     path('new_character', NewCharacterSheet.as_view()),
-]
+    # TODO path('view_campaigns', .as_view()),
+    # TODO path('view_characters', .as_view()),
+] + static(settings.STATIC_URL,
+           document_root=settings.STATIC_ROOT)
+
+

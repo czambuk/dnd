@@ -52,11 +52,3 @@ class NewCharacterSheet(View):
             request,
             "char_app/char_new.html",
         )
-
-
-class HomePage(View):
-    def get(self, request):
-        return TemplateResponse(
-            request,
-            "char_app/char_base.html",
-        )

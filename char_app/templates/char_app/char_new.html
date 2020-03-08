@@ -6,12 +6,7 @@
 
 </title>
 <head>
-    {% block statics %}
-    {% load static %}
 
-    <link rel="stylesheet" type="text/css" href="{% static 'char_app/character.css' %}">
-    <script type="text/javascript" src="{% static 'char_app/character.js' %}"></script>
-    {% endblock statics %}
 </head>
 <body>
 {% block content %}
@@ -451,6 +446,12 @@
 </div>
 {% endblock content %}
 </body>
+{% block js %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'char_app/character.css' %}">
+<script type="text/javascript" src="{% static 'char_app/character.js' %}"></script>
+{% endblock js %}
+
 </html>
 
 

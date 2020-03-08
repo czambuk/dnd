@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        {{ page_title|default:"Main site" }}
+        {% endblock title %}
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'landing_page/main_styles.css' %}">
+    <script type="text/javascript" src="{% static 'char_app/character.js' %}"></script>
+</head>
+<body>
+<div class="navbar">
+    <ul>
+        <li><a href="/">Main site</a></li>
+        <li><a href="/">My account</a></li>
+        <li><a href="/">Contact</a></li>
+    </ul>
+</div>
+{% block content %}
+<!--<div class="grid-container">-->
+<!--    <div class="charmenu">-->
+<!--        <a href="/new_character">New character</a>-->
+<!--    </div>-->
+<!--    <div class="charmenu">-->
+<!--        <a href="/view_campaigns">View campaigns</a>-->
+<!--    </div>-->
+<!--    <div class="charmenu">-->
+<!--        <a href="/view_characters">View characters</a>-->
+<!--    </div>-->
+<!--    <div class="charmenu">-->
+<!--        <a href="/roll_dice">Dice roller</a>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="content-links">
+    <div class="mainmenu">
+        <a href="/new_character" title="New character"><img src="{% static 'hero-icon.png' %}"></a>
+    </div>
+    <div class="mainmenu">
+        <a href="/view_campaigns" title="View campaigns"><img src="{% static 'campaign-icon.png' %}"></a>
+    </div>
+    <div class="mainmenu">
+        <a href="/view_characters" title="View characters"><img src="{% static 'characters-icon.png' %}"></a>
+    </div>
+    <div class="mainmenu">
+        <a href="/roll_dice" title="Roll the dice!"><img src="{% static 'dice-icon.png' %}"></a>
+    </div>
+
+    {% endblock content %}
+</body>
+</html>
