@@ -108,7 +108,7 @@
                         <div class="label-container">
                             <label for="inspiration">Inspiration</label>
                         </div>
-                        <input name="inspiration" type="checkbox"/>
+                        <input name="inspiration" type="checkbox" checked />
                     </div>
                     <div class="proficiencybonus box">
                         <div class="label-container">
@@ -443,12 +443,6 @@
 </form>
 {% endblock content %}
 </body>
-{% block static %}
-{% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'char_app/character.css' %}">
-<script type="text/javascript" src="{% static 'char_app/character.js' %}"></script>
-{% endblock static %}
-
 </html>
 
 

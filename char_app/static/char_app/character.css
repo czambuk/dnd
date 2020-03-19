@@ -211,7 +211,7 @@ form.charsheet main div.label-container > label {
   font-size: 8px;
 }
 form.charsheet main > section {
-  width: 32%;
+  width: 33%;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -609,7 +609,7 @@ form.charsheet main section.combat > div.deathsaves > div > div.marks div.deaths
   font-size: 8px;
   text-align: right;
   -webkit-box-flex: 1;
-          flex: 1 50%;
+          flex: 1 30%;
 }
 form.charsheet main section.combat > div.deathsaves > div div.bubbles {
   -webkit-box-flex: 1;

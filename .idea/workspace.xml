@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71197edc-a188-4544-858b-4baf566afe80" name="Default Changelist" comment="" />
+    <list default="true" id="71197edc-a188-4544-858b-4baf566afe80" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/char_app/static/char_app/character.css" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/static/char_app/character.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/char_app/templates/char_app/char_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/templates/char_app/char_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/char_app/templates/char_app/char_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/templates/char_app/char_new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/char_app/templates/char_app/char_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/templates/char_app/char_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing_page/static/landing_page/main_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/static/landing_page/main_styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +76,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -107,10 +117,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="486" y="118" width="1022" height="718" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583665029757" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1583664128980">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1584472930910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583664128980" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584472930910" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582474885641">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
