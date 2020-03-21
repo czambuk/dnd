@@ -606,7 +606,7 @@ form.charsheet main section.combat > div.deathsaves > div > div.marks div.deaths
           align-items: center;
 }
 form.charsheet main section.combat > div.deathsaves > div > div.marks div.deathsuccesses label, form.charsheet main section.combat > div.deathsaves > div > div.marks div.deathfails label {
-  font-size: 8px;
+  font-size: 7px;
   text-align: right;
   -webkit-box-flex: 1;
           flex: 1 30%;

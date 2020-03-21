@@ -32,6 +32,7 @@ urlpatterns = [
     path('new_character', NewCharacterSheet.as_view()),
     # TODO path('view_campaigns', .as_view()),
     # TODO path('view_characters', .as_view()),
+    # TODO path('roll_dice', .as_view()),
 ] + static(settings.STATIC_URL,
            document_root=settings.STATIC_ROOT)
 
