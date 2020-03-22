@@ -4,22 +4,19 @@ var $mainMenuItem = $(".mainMenuItem");
 // Unlimited main menu events after mouseover
 $mainMenuItem.on('mouseenter', function () {
     $(this).animate({
-        width: 265,
-        height: 265,
+        "width" : "105%",
+        "height" : "105%",
     }, 250);
     $(this).find('img').addClass("mainMenuShadow");
-    var $descriptionDiv = $("<div class='mainMenuDesc'>DIVDIVDIV</div>");
-//   Description div addition
-//    $(this).before($descriptionDiv);
+    $(this).children('div .mainMenuDesc').removeClass('hidden');
 });
 
 // Unlimited main menu events after mouseleave
 $mainMenuItem.on("mouseleave", function () {
     $(this).animate({
-        width: 250,
-        height: 250,
+        "width" : "100%",
+        "height" : "100%",
     }, 250);
     $(this).find('img').removeClass("mainMenuShadow");
-//    Description div removal
-//    $(this).siblings('.mainMenuDesc').remove();
+    $(this).children('div .mainMenuDesc').addClass('hidden');
 });
