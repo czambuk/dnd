@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     # My apps
     'char_app',
     'landing_page',
+    'dice_roller',
 
     # Default apps
     'django.contrib.admin',

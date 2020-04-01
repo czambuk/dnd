@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from char_app.views import ViewCharacterSheet, NewCharacterSheet
 from landing_page.views import HomePage
+from dice_roller.views import DiceRollView
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -32,7 +33,8 @@ urlpatterns = [
     path('new_character', NewCharacterSheet.as_view()),
     # TODO path('view_campaigns', .as_view()),
     # TODO path('view_characters', .as_view()),
-    # TODO path('roll_dice', .as_view()),
+    # dice_roller
+    path('roll_dice', DiceRollView.as_view()),
 ] + static(settings.STATIC_URL,
            document_root=settings.STATIC_ROOT)
 

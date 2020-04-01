@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71197edc-a188-4544-858b-4baf566afe80" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dice_roll.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dice_roller/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dice_roller/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dice_roller/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dice_roller/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dice_roller/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dice_roller/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dice_roller/templates/dice_roller/dice_roller.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dice_roller/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dice_roller/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing_page/static/landing_page/main_site.js" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/static/landing_page/main_site.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dnd/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnd/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dnd/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnd/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing_page/static/landing_page/main_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/static/landing_page/main_styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" afterDir="false" />
     </list>
@@ -18,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
@@ -26,13 +38,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Y2HSm8YC9cHGrkYkhvY3WxBE8I" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -54,6 +69,56 @@
       <recent name="C:\Users\tegru\PycharmProjects\dnd\char_app\static\char_app" />
       <recent name="C:\Users\tegru\PycharmProjects\dnd\dnd\char_app\templates\html" />
     </key>
+  </component>
+  <component name="RunManager" selected="Python.dice_roll">
+    <configuration name="dice_roll" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dnd" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dice_roll.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dnd" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/landing_page" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/landing_page/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.dice_roll" />
+        <item itemvalue="Python.views" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -81,6 +146,9 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="72" y="182" key="#Menus_and_Toolbars" timestamp="1582469876446">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -102,6 +170,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582469487710" />
+    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1585678895361">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585678895361" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1583677286558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -110,14 +182,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="233" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584647369495" />
+    <state width="1899" height="274" key="GridCell.Tab.0.bottom" timestamp="1585599299793">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585599299793" />
+    <state width="1899" height="274" key="GridCell.Tab.0.center" timestamp="1585599299793">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585599299793" />
+    <state width="1899" height="274" key="GridCell.Tab.0.left" timestamp="1585599299793">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585599299793" />
+    <state width="1899" height="274" key="GridCell.Tab.0.right" timestamp="1585599299793">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585599299793" />
     <state x="486" y="118" width="1022" height="718" key="SettingsEditor" timestamp="1583665029757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="486" y="118" width="1022" height="718" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583665029757" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1584867886863">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1585678740923">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584867886863" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585678740923" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582474885641">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

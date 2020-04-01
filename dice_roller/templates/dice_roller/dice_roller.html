@@ -1,0 +1,16 @@
+{% extends 'landing_page/main_site.html' %}
+
+{% block title %}
+Dice roller
+{% endblock title %}
+
+{% block content %}
+<div>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Roll!">
+        <div>{{ result }}</div>
+    </form>
+</div>
+{% endblock content %}

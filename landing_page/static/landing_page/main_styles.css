@@ -1,5 +1,9 @@
+:root {
+  --main-bg-color: #EAEAEA;
+}
+
 body {
-    background-color: white;
+    background-color: var(--main-bg-color);
     color: black;
     font-size: 16;
     font-family: 'Sen', sans-serif;
@@ -64,12 +68,13 @@ a {
 .mainMenuItem {
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.75);
     justify-content: center;
     align-items: center;
     width: 200px;
     height: auto;
     max-height: 400px;
+    transition: 1500;
+    background-color: var(--main-bg-color);
 }
 
 .mainMenuDesc {
@@ -77,11 +82,13 @@ a {
     text-align: center;
     justify-content: center;
 }
+
 a {
     display: flex;
     justify-content: center;
 }
-img {
+
+a img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -92,7 +99,17 @@ img {
 }
 
 .hidden {
-display: none;
+    display: none;
 }
 
+.lower-image {
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+}
 
+.lower-image img {
+    position: fixed;
+    right: 25px;
+    height: 45px;
+}
