@@ -15,27 +15,32 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from char_app.views import ViewCharacterSheet, NewCharacterSheet
-from landing_page.views import HomePage
-from dice_roller.views import DiceRollView
 from django.conf import settings
 from django.conf.urls.static import static
 
+# From Apps
+from char_app.views import ViewCharacterSheet, NewCharacterSheet
+from landing_page.views import HomePage
+from dice_roller.views import DiceRollView
+from campaigns_diary.views import (CampaignCreateView,
+                                   CampaignViewAllView,
+                                   CampaignDetailView
+                                   )
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    # My urls
-
-    # char_app specifically
-    path('view_character/<int:id>', ViewCharacterSheet.as_view()),
-
-    # landing_page links
-    path('', HomePage.as_view()),  # main site
-    path('new_character', NewCharacterSheet.as_view()),
-    # TODO path('view_campaigns', .as_view()),
-    # TODO path('view_characters', .as_view()),
-    # dice_roller
-    path('roll_dice', DiceRollView.as_view()),
-] + static(settings.STATIC_URL,
-           document_root=settings.STATIC_ROOT)
-
-
+                  path('admin/', admin.site.urls),
+                  # My urls
+                  # landing_page
+                  path('new_character', NewCharacterSheet.as_view()),
+                  path('view_campaigns', CampaignViewAllView.as_view()),
+                  # TODO path('view_characters', .as_view()),
+                  path('roll_dice', DiceRollView.as_view()),
+                  # char_app
+                  path('view_character/<int:id>', ViewCharacterSheet.as_view()),
+                  # main site
+                  path('', HomePage.as_view()),
+                  # add_campaign
+                  path('add_campaign', CampaignCreateView.as_view()),
+                  path('view_campaigns/<int:id>', CampaignDetailView.as_view()),
+              ] + static(settings.STATIC_URL,
+                         document_root=settings.STATIC_ROOT)

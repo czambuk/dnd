@@ -1,0 +1,16 @@
+{% extends 'landing_page/main_site.html' %}
+
+{% block title %}
+List of campaigns
+{% endblock title %}
+
+{% block content %}
+<div>
+    <a href="/add_campaign" title="Add campaign">Add campaign</a>
+    <ul>
+        {% for campaign in object_list %}
+        <li><a href="/view_campaigns/{{ campaign.id }}">{{ campaign }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock content %}

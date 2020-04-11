@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'char_app',
     'landing_page',
     'dice_roller',
+    'campaigns_diary',
 
     # Default apps
     'django.contrib.admin',

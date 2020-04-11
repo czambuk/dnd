@@ -26,15 +26,3 @@ def roll(code):
     rolls = [random.randint(1, roll_data[1]) for i in range(0, roll_data[0])]
     return sum(rolls) + roll_data[2]
 
-
-# Testy
-
-a = '3k8+2'
-b = '20k12+10'
-c = 'k12'
-d = '5k100'
-
-print(roll(a))
-print(roll(b))
-print(roll(c))
-print(roll(d))

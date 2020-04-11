@@ -1,0 +1,17 @@
+{% extends 'landing_page/main_site.html' %}
+
+{% block title %}
+Form
+{% endblock title %}
+
+{% block content %}
+<div>
+    <form action="" method="post">
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <input type="submit" value="Ok!">
+    </form>
+</div>
+{% endblock content %}
