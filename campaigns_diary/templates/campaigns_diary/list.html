@@ -7,8 +7,12 @@ List
 {% block content %}
 <div>
     <ul>
-        {% for entry in object_list %}
-            <li>{{ entry }}</li>
+        <h3>{{ chosen_campaign }}</h3>
+        {% for entry in entries %}
+            <li>Entry name: {{ entry.entry_name }}<br>
+            Entry content: {{ entry.entry_content }}<br>
+            Time added: {{ entry.time_added }}<br>
+            Time modified: {{ entry.time_modified }}</li><hr>
         {% endfor %}
     </ul>
 </div>

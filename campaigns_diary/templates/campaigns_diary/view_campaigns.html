@@ -5,11 +5,26 @@ List of campaigns
 {% endblock title %}
 
 {% block content %}
-<div>
-    <a href="/add_campaign" title="Add campaign">Add campaign</a>
+<div class="campaigns">
     <ul>
         {% for campaign in object_list %}
-        <li><a href="/view_campaigns/{{ campaign.id }}">{{ campaign }}</a></li>
+        <li>
+            <p class="campaign-name">{{ campaign }}</p>
+            <p class="campaign-comment">{{ campaign.comment }}</p>
+            <button>
+                <a href="/view_campaigns/{{ campaign.id }}" title="Campaign details">Campaign details</a>
+            </button>
+            <button>
+                <a href="/add_entry" title="Add entry">Add journal entry</a>
+            </button>
+            <button>
+                <a href="/edit_campaign" title="Edit campaign">Edit campaign</a>
+            </button>
+            <button>
+                <a href="/delete_campaign" title="Delete campaign">Delete campaign</a>
+            </button>
+            <hr>
+        </li>
         {% endfor %}
     </ul>
 </div>

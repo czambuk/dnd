@@ -1,4 +1,4 @@
-from django.shortcuts import redirect
+from django.shortcuts import redirect, get_object_or_404
 from django.views import View
 
 from .forms import (CampaignForm,
@@ -31,18 +31,20 @@ class CampaignViewAllView(ListView):
     model = Campaign
 
 
+class CampaignEntryCreateView(CreateView):
+    form_class = CampaignEntryForm
+    template_name = 'campaigns_diary/form.html'
+    success_url = '/view_campaigns'
+
+
 class CampaignDetailView(ListView):
     template_name = 'campaigns_diary/list.html'
-    model = Campaign
-
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        return queryset.filter(**self.kwargs)
+    model = CampaignEntry
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
-        chosen_campaign = Campaign.objects.get(id=self.kwargs['id'])
+        chosen_campaign = Campaign.objects.get(id=self.kwargs['camp_id'])
         context['chosen_campaign'] = chosen_campaign
+        entries = CampaignEntry.objects.filter(chosen_campaign_id=self.kwargs['camp_id'])
+        context['entries'] = entries
         return context
-
-

@@ -24,7 +24,8 @@ from landing_page.views import HomePage
 from dice_roller.views import DiceRollView
 from campaigns_diary.views import (CampaignCreateView,
                                    CampaignViewAllView,
-                                   CampaignDetailView
+                                   CampaignDetailView,
+                                   CampaignEntryCreateView,
                                    )
 
 urlpatterns = [
@@ -41,6 +42,7 @@ urlpatterns = [
                   path('', HomePage.as_view()),
                   # add_campaign
                   path('add_campaign', CampaignCreateView.as_view()),
-                  path('view_campaigns/<int:id>', CampaignDetailView.as_view()),
+                  path('view_campaigns/<int:camp_id>', CampaignDetailView.as_view()),
+                  path('add_entry', CampaignEntryCreateView.as_view()),
               ] + static(settings.STATIC_URL,
                          document_root=settings.STATIC_ROOT)

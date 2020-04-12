@@ -13,7 +13,9 @@ body {
 
 a {
     text-decoration: none;
-    color: red;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar {
@@ -83,11 +85,6 @@ a {
     justify-content: center;
 }
 
-a {
-    display: flex;
-    justify-content: center;
-}
-
 a img {
     max-width: 100%;
     max-height: 100%;
@@ -113,3 +110,24 @@ a img {
     right: 25px;
     height: 45px;
 }
+
+li {
+    list-style-type: none;
+}
+.campaigns {
+    padding: 30px;
+}
+campaign-name {
+
+}
+
+campaign-comment {
+
+}
+.campaigns a , .campaign-name{
+    color: black;
+    text-shadow: 2px 2px 8px grey;
+    text-transform: uppercase;
+    text-align: center;
+}
+

@@ -2,28 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71197edc-a188-4544-858b-4baf566afe80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/campaigns_diary/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/campaigns_diary/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/campaigns_diary/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/campaigns_diary/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/campaigns_diary/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/campaigns_diary/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/campaigns_diary/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/campaigns_diary/templates/campaigns_diary/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/campaigns_diary/templates/campaigns_diary/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/campaigns_diary/templates/campaigns_diary/view_campaigns.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/campaigns_diary/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/campaigns_diary/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/campaigns_diary/migrations/0002_auto_20200412_1431.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice_roll.py" beforeDir="false" afterPath="$PROJECT_DIR$/dice_roll.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dnd/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnd/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/campaigns_diary/templates/campaigns_diary/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/campaigns_diary/templates/campaigns_diary/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/campaigns_diary/templates/campaigns_diary/view_campaigns.html" beforeDir="false" afterPath="$PROJECT_DIR$/campaigns_diary/templates/campaigns_diary/view_campaigns.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/campaigns_diary/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/campaigns_diary/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/char_app/templates/char_app/char_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/templates/char_app/char_base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dnd/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnd/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing_page/static/landing_page/main_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/static/landing_page/main_styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/campaign-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/static/landing_page/campaign-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/characters-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/static/landing_page/characters-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/dice-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/static/landing_page/dice-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/hero-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/static/landing_page/hero-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/warrior.png" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/static/landing_page/warrior.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,10 +196,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="486" y="118" width="1022" height="718" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583665029757" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1586622666239">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1586699138676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586622666239" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586699138676" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586621594773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
