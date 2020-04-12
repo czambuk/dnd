@@ -2,7 +2,7 @@
 from django.template.response import TemplateResponse
 from django.http import HttpResponse, HttpRequest
 from django.views import View
-from .models import Player, Character, Campaign
+from .models import Player, Character
 
 
 class ViewCharacterSheet(View):

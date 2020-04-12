@@ -26,6 +26,7 @@ from campaigns_diary.views import (CampaignCreateView,
                                    CampaignViewAllView,
                                    CampaignDetailView,
                                    CampaignEntryCreateView,
+                                   CampaignDeleteView,
                                    )
 
 urlpatterns = [
@@ -40,9 +41,10 @@ urlpatterns = [
                   path('view_character/<int:id>', ViewCharacterSheet.as_view()),
                   # main site
                   path('', HomePage.as_view()),
-                  # add_campaign
+                  # manage campaigns
                   path('add_campaign', CampaignCreateView.as_view()),
                   path('view_campaigns/<int:camp_id>', CampaignDetailView.as_view()),
                   path('add_entry', CampaignEntryCreateView.as_view()),
+                  path('delete_campaign/<int:campaign_id>', CampaignDeleteView.as_view()),
               ] + static(settings.STATIC_URL,
                          document_root=settings.STATIC_ROOT)

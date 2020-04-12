@@ -31,10 +31,3 @@ class Character(models.Model):
     # STATS TODO
 
 
-class Campaign(models.Model):
-    name = models.CharField(max_length=128)
-    date_added = models.DateField(auto_now_add=True)
-    realm = models.CharField(max_length=64,
-                             default='Forgotten Realms'
-                             )
-    characters = models.ManyToManyField(Character)

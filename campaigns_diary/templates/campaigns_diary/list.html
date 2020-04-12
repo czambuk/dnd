@@ -5,14 +5,19 @@ List
 {% endblock title %}
 
 {% block content %}
-<div>
+<div class="campaigns-manage">
+    <button>
+        <a href="/add_entry" title="Add entry">Add journal entry</a>
+    </button>
     <ul>
         <h3>{{ chosen_campaign }}</h3>
         {% for entry in entries %}
-            <li>Entry name: {{ entry.entry_name }}<br>
+        <li>Entry name: {{ entry.entry_name }}<br>
             Entry content: {{ entry.entry_content }}<br>
             Time added: {{ entry.time_added }}<br>
-            Time modified: {{ entry.time_modified }}</li><hr>
+            Time modified: {{ entry.time_modified }}
+        </li>
+        <hr>
         {% endfor %}
     </ul>
 </div>

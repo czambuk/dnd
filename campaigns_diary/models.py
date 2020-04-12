@@ -1,10 +1,17 @@
 from django.db import models
+from char_app.models import Player, Character
 # from django.contrib.auth.models import User
 
 
 class Campaign(models.Model):
     name = models.CharField(max_length=128)
     comment = models.TextField()
+    date_added = models.DateField(auto_now_add=True)
+    realm = models.CharField(max_length=64,
+                             default='Forgotten Realms'
+                             )
+    characters = models.ManyToManyField(Character)
+    players = models.ManyToManyField(Player)
 
     def __str__(self):
         return self.name

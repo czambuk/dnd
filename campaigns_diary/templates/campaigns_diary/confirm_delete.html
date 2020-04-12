@@ -1,0 +1,15 @@
+{% extends 'landing_page/main_site.html' %}
+
+{% block title %}
+Confirm
+{% endblock title %}
+
+{% block content %}
+<div class="confirm-delete">
+    <form action="" method="post">
+        {% csrf_token %}
+        <p>Are you sure?</p>
+        <button type="submit">YES!</button>
+    </form>
+</div>
+{% endblock content %}

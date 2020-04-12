@@ -5,7 +5,12 @@ List of campaigns
 {% endblock title %}
 
 {% block content %}
-<div class="campaigns">
+<div class="campaigns-manage">
+    <button>
+        <a href="/add_campaign" title="Add campaign">New campaign</a>
+    </button>
+</div>
+<div class="campaigns-list">
     <ul>
         {% for campaign in object_list %}
         <li>
@@ -15,13 +20,10 @@ List of campaigns
                 <a href="/view_campaigns/{{ campaign.id }}" title="Campaign details">Campaign details</a>
             </button>
             <button>
-                <a href="/add_entry" title="Add entry">Add journal entry</a>
-            </button>
-            <button>
                 <a href="/edit_campaign" title="Edit campaign">Edit campaign</a>
             </button>
             <button>
-                <a href="/delete_campaign" title="Delete campaign">Delete campaign</a>
+                <a href="/delete_campaign/{{ campaign.id }}" title="Delete campaign">Delete campaign</a>
             </button>
             <hr>
         </li>
