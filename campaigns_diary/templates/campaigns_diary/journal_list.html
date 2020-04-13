@@ -6,11 +6,16 @@ List
 
 {% block content %}
 <div class="campaigns-manage">
-    <button>
-        <a href="/add_entry" title="Add entry">Add journal entry</a>
-    </button>
+    <a href="/add_entry" title="Add entry">
+        <button>Add journal entry</button>
+    </a>
     <ul>
-        <h3>{{ chosen_campaign }}</h3>
+        <li><h3>Campaign name: {{ chosen_campaign }}</h3></li>
+        <ul>Characters:
+            {% for char in chosen_campaign.characters.all %}
+            <li>{{ char.name }}</li>
+            {% endfor %}
+        </ul>
         {% for entry in entries %}
         <li>Entry name: {{ entry.entry_name }}<br>
             Entry content: {{ entry.entry_content }}<br>

@@ -10,11 +10,14 @@ class CampaignForm(forms.ModelForm):
         model = Campaign
         fields = (
             'name',
-            'comment',
+            'description',
+            'realm',
+            'characters',
         )
         widgets = {
             'name': forms.TextInput,
-            'comment': forms.Textarea,
+            'description': forms.Textarea,
+            'characters': forms.SelectMultiple,
         }
 
 

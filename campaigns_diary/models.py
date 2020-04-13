@@ -5,13 +5,12 @@ from char_app.models import Player, Character
 
 class Campaign(models.Model):
     name = models.CharField(max_length=128)
-    comment = models.TextField()
+    description = models.TextField()
     date_added = models.DateField(auto_now_add=True)
     realm = models.CharField(max_length=64,
                              default='Forgotten Realms'
                              )
     characters = models.ManyToManyField(Character)
-    players = models.ManyToManyField(Player)
 
     def __str__(self):
         return self.name

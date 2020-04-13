@@ -5,6 +5,9 @@ class Player(models.Model):
     name = models.CharField(max_length=128)
     comment = models.TextField(null=True, default=None)
 
+    def __str__(self):
+        return self.name
+
 
 class Character(models.Model):
     # BASIC INFO
@@ -29,5 +32,8 @@ class Character(models.Model):
                                on_delete=models.CASCADE
                                )
     # STATS TODO
+
+    def __str__(self):
+        return self.name
 
 

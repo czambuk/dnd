@@ -6,21 +6,26 @@ List of campaigns
 
 {% block content %}
 <div class="campaigns-manage">
-    <button>
-        <a href="/add_campaign" title="Add campaign">New campaign</a>
-    </button>
+            <a href="/add_campaign" title="Add campaign">
+                <button>New campaign</button>
+            </a>
 </div>
 <div class="campaigns-list">
     <ul>
         {% for campaign in object_list %}
         <li>
-            <p class="campaign-name">{{ campaign }}</p>
-            <p class="campaign-comment">{{ campaign.comment }}</p>
+            <p class="campaign-name">Campaign name: {{ campaign }}</p>
+            <p class="campaign-comment">{{ campaign.description }}</p>
+            <ul>Characters:
+                {% for char in campaign.characters.all %}
+                {{ char.name }}
+                {% endfor %}
+            </ul>
             <button>
                 <a href="/view_campaigns/{{ campaign.id }}" title="Campaign details">Campaign details</a>
             </button>
             <button>
-                <a href="/edit_campaign" title="Edit campaign">Edit campaign</a>
+                <a href="/update_campaign/{{ campaign.id }}" title="Edit campaign">Edit campaign</a>
             </button>
             <button>
                 <a href="/delete_campaign/{{ campaign.id }}" title="Delete campaign">Delete campaign</a>

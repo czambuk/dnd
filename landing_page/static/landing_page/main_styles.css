@@ -14,8 +14,6 @@ body {
 a {
     text-decoration: none;
     text-transform: uppercase;
-    display: flex;
-    justify-content: center;
 }
 
 .navbar {
@@ -142,6 +140,7 @@ li {
     text-shadow: 2px 2px 8px grey;
     text-transform: uppercase;
     text-align: center;
+    display: block;
 }
 
 .confirm-delete {
