@@ -2,20 +2,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'landing_page/main_styles.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <title>
         {% block title %}
-<!--        {{ page_title|default:"Main site" }}-->
+        {{ page_title|default:"Main site" }}
         {% endblock title %}
     </title>
-    <link rel="stylesheet" type="text/css" href="{% static 'landing_page/main_styles.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="navbar">
     <ul>
         <li><a href="/">Main site</a></li>
-        <li><a href="/">My account</a></li>
+        <li>
+            {% if request.user.is_authenticated %}
+            Hej, {{ request.user.username }}
+            <a href="/logout"> - Wyloguj</a>
+            {% else %}
+            <a href="/login">Zaloguj się</a>
+            {% endif %}
+        </li>
         <li><a href="/">Contact</a></li>
     </ul>
 </div>
@@ -60,8 +68,6 @@
     <img src="{% static '/landing_page/warrior.png' %}">
 </div>
 {% endblock content %}
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="{% static 'landing_page/main_site.js' %}"></script>
 </body>

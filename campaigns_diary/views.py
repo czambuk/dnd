@@ -21,7 +21,6 @@ from django.views.generic import (CreateView,
 class CampaignCreateView(CreateView):
     form_class = CampaignForm
     template_name = 'campaigns_diary/form.html'
-    success_url = '/view_campaigns'
 
     def form_valid(self, form):
         characters = form.cleaned_data['characters']
@@ -29,7 +28,7 @@ class CampaignCreateView(CreateView):
         new_campaign = Campaign.objects.create(**form.cleaned_data)
         for char in characters:
             new_campaign.characters.add(Character.objects.get(id=char.id))
-        return redirect('/view_campaigns')
+        return redirect(f'/view_campaigns/{new_campaign.id}')
 
 
 class CampaignUpdateView(UpdateView):
@@ -46,9 +45,7 @@ class CampaignDeleteView(DeleteView):
     model = Campaign
     template_name = 'campaigns_diary/confirm_delete.html'
     pk_url_kwarg = 'campaign_id'
-
-    def get_success_url(self):
-        return '/view_campaigns'
+    success_url = '/view_campaigns'
 
 
 class CampaignViewAllView(ListView):
@@ -59,8 +56,9 @@ class CampaignViewAllView(ListView):
 class CampaignEntryCreateView(CreateView):
     form_class = CampaignEntryForm
     template_name = 'campaigns_diary/form.html'
-    success_url = '/view_campaigns'
-    # TODO Dodać przekierowanie na stronę kampanii, dla której był dodawany wpis
+
+    def get_success_url(self):
+        return f'/view_campaigns/{self.object.chosen_campaign.id}'
 
 
 class CampaignDetailView(ListView):
