@@ -1,0 +1,12 @@
+.login_page {
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.login_page button {
+    width: 100px;
+    height: 25px;
+    font-weight: bold;
+
+}

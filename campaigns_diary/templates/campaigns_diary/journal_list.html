@@ -1,26 +1,26 @@
 {% extends 'landing_page/main_site.html' %}
 
 {% block title %}
-List
+Lista
 {% endblock title %}
 
 {% block content %}
 <div class="campaigns-manage">
-    <a href="/add_entry" title="Add entry">
-        <button>Add journal entry</button>
+    <a href="/add_entry" title="Dodaj wpis dziennika">
+        <button>Dodaj wpis dziennika</button>
     </a>
     <ul>
-        <li><h3>Campaign name: {{ chosen_campaign }}</h3></li>
-        <ul>Characters:
+        <li><h3>Nazwa kampanii: {{ chosen_campaign }}</h3></li>
+        <ul>Bohaterowie:
             {% for char in chosen_campaign.characters.all %}
             <li>{{ char.name }}</li>
             {% endfor %}
         </ul>
         {% for entry in entries %}
-        <li>Entry name: {{ entry.entry_name }}<br>
-            Entry: {{ entry.entry_content }}<br>
-            Time added: {{ entry.time_added }}<br>
-            Time modified: {{ entry.time_modified }}
+        <li>Tytuł wpisu: {{ entry.entry_name }}<br>
+            Treść: {{ entry.entry_content }}<br>
+            Dodano wpis: {{ entry.time_added }}<br>
+            Edytowano wpis: {{ entry.time_modified }}
         </li>
         <hr>
         {% endfor %}

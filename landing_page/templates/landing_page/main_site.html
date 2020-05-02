@@ -15,7 +15,7 @@
 <body>
 <div class="navbar">
     <ul>
-        <li><a href="/">Main site</a></li>
+        <li><a href="/">Strona główna</a></li>
         <li>
             {% if request.user.is_authenticated %}
             Hej, {{ request.user.username }}
@@ -24,42 +24,42 @@
             <a href="/login">Zaloguj się</a>
             {% endif %}
         </li>
-        <li><a href="/">Contact</a></li>
+        <li><a href="/">Kontakt</a></li>
     </ul>
 </div>
 {% block content %}
 <div class="content-links">
     <div class="mainMenuItem">
-        <a href="/new_character" title="New character">
+        <a href="/new_character" title="NOWY BOHATER">
             <img src="{% static '/landing_page/hero-icon.png' %}">
         </a>
         <div class="mainMenuDesc hidden">
-            NEW CHARACTER
+            NOWY BOHATER
         </div>
     </div>
     <div class="mainMenuItem">
-        <a href="/view_campaigns" title="View campaigns">
+        <a href="/view_campaigns" title="WYŚWIETL KAMPANIE">
             <img src="{% static '/landing_page/campaign-icon.png' %}">
         </a>
         <div class="mainMenuDesc hidden">
-            VIEW CAMPAIGNS
+            WYŚWIETL KAMPANIE
         </div>
     </div>
 
     <div class="mainMenuItem">
-        <a href="/view_characters" title="View all characters">
+        <a href="/view_characters" title="WYŚWIETL BOHATERÓW">
             <img src="{% static '/landing_page/characters-icon.png' %}">
         </a>
         <div class="mainMenuDesc hidden">
-            VIEW ALL CHARACTERS
+            WYŚWIETL BOHATERÓW
         </div>
     </div>
     <div class="mainMenuItem">
-        <a href="/roll_dice" title="Roll the dice!">
+        <a href="/roll_dice" title="RZUĆ KOŚĆMI!">
             <img src="{% static '/landing_page/dice-icon.png' %}">
         </a>
         <div class="mainMenuDesc hidden">
-            ROLL THE DICE!
+            RZUĆ KOŚĆMI!
         </div>
     </div>
 </div>

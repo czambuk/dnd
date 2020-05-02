@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 
 # From Apps
 from char_app.views import ViewCharacterSheet, NewCharacterSheet
-from landing_page.views import HomePage, LoginPageView, LogoutPageView
+from landing_page.views import HomePage, LoginPageView, LogoutPageView, UserCreateView
 from dice_roller.views import DiceRollView
 from campaigns_diary.views import (CampaignCreateView,
                                    CampaignViewAllView,
@@ -33,11 +33,12 @@ from campaigns_diary.views import (CampaignCreateView,
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   # My urls
-                  # landing_page
+                  # landing_page links and functionalities
                   path('new_character', NewCharacterSheet.as_view()),
                   path('view_campaigns', CampaignViewAllView.as_view()),
                   path('login', LoginPageView.as_view()),
                   path('logout', LogoutPageView.as_view()),
+                  path('register', UserCreateView.as_view()),
                   # TODO path('view_characters', .as_view()),
                   path('roll_dice', DiceRollView.as_view()),
                   # char_app

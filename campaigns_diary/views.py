@@ -20,7 +20,7 @@ from django.views.generic import (CreateView,
 
 class CampaignCreateView(CreateView):
     form_class = CampaignForm
-    template_name = 'campaigns_diary/form.html'
+    template_name = 'landing_page/form.html'
 
     def form_valid(self, form):
         characters = form.cleaned_data['characters']
@@ -34,7 +34,7 @@ class CampaignCreateView(CreateView):
 class CampaignUpdateView(UpdateView):
     model = Campaign
     form_class = CampaignForm
-    template_name = 'campaigns_diary/form.html'
+    template_name = 'landing_page/form.html'
     pk_url_kwarg = 'campaign_id'
 
     def get_success_url(self):
@@ -55,7 +55,7 @@ class CampaignViewAllView(ListView):
 
 class CampaignEntryCreateView(CreateView):
     form_class = CampaignEntryForm
-    template_name = 'campaigns_diary/form.html'
+    template_name = 'landing_page/form.html'
 
     def get_success_url(self):
         return f'/view_campaigns/{self.object.chosen_campaign.id}'
