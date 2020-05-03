@@ -1,6 +1,6 @@
 from django.db import models
 from char_app.models import Player, Character
-# from django.contrib.auth.models import User
+from django.contrib.auth.models import User
 
 
 class Campaign(models.Model):
@@ -11,6 +11,7 @@ class Campaign(models.Model):
                              default='Forgotten Realms'
                              )
     characters = models.ManyToManyField(Character)
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
@@ -21,4 +22,6 @@ class CampaignEntry(models.Model):
     entry_content = models.TextField()
     time_added = models.DateTimeField(auto_now_add=True)
     time_modified = models.DateTimeField(auto_now=True)
-    chosen_campaign = models.ForeignKey("Campaign", on_delete=models.CASCADE)
+    chosen_campaign = models.ForeignKey(Campaign, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
+

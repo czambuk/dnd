@@ -1,7 +1,7 @@
 {% extends 'landing_page/main_site.html' %}
 
 {% block title %}
-List of campaigns
+Lista kampanii
 {% endblock title %}
 
 {% block content %}
@@ -15,6 +15,7 @@ List of campaigns
         {% for campaign in object_list %}
         <li>
             <p class="campaign-name">Nazwa kampanii: {{ campaign }}</p>
+            <p class="campaign-owner">Twórca kampanii: {{ campaign.owner }}</p>
             <p class="campaign-comment">{{ campaign.description }}</p>
             <ul>Bohaterowie:
                 {% for char in campaign.characters.all %}

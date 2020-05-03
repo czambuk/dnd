@@ -1,11 +1,12 @@
 # from django.db import models
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.template.response import TemplateResponse
 from django.http import HttpResponse, HttpRequest
 from django.views import View
 from .models import Player, Character
 
 
-class ViewCharacterSheet(View):
+class ViewCharacterSheet(LoginRequiredMixin, View):
     def get(self, request, id):
         if Character.objects.get(id=id) is not None:
             character = Character.objects.get(id=id)
@@ -20,7 +21,7 @@ class ViewCharacterSheet(View):
         )
 
 
-class NewCharacterSheet(View):
+class NewCharacterSheet(LoginRequiredMixin, View):
     def get(self, request):
         title = f"New PC"
         dict = {"page_title": title}

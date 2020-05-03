@@ -1,5 +1,7 @@
-from django.shortcuts import redirect, get_object_or_404
-from django.views import View
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.shortcuts import redirect
+# from django.views import View
+from django.contrib.auth.models import User
 
 from .forms import (CampaignForm,
                     CampaignEntryForm
@@ -18,7 +20,7 @@ from django.views.generic import (CreateView,
                                   )
 
 
-class CampaignCreateView(CreateView):
+class CampaignCreateView(LoginRequiredMixin, CreateView):
     form_class = CampaignForm
     template_name = 'landing_page/form.html'
 
@@ -31,7 +33,7 @@ class CampaignCreateView(CreateView):
         return redirect(f'/view_campaigns/{new_campaign.id}')
 
 
-class CampaignUpdateView(UpdateView):
+class CampaignUpdateView(LoginRequiredMixin, UpdateView):
     model = Campaign
     form_class = CampaignForm
     template_name = 'landing_page/form.html'
@@ -41,19 +43,23 @@ class CampaignUpdateView(UpdateView):
         return f'/view_campaigns/{self.object.id}'
 
 
-class CampaignDeleteView(DeleteView):
+class CampaignDeleteView(LoginRequiredMixin, DeleteView):
     model = Campaign
     template_name = 'campaigns_diary/confirm_delete.html'
     pk_url_kwarg = 'campaign_id'
     success_url = '/view_campaigns'
 
 
-class CampaignViewAllView(ListView):
+class CampaignViewAllView(LoginRequiredMixin, ListView):
     template_name = 'campaigns_diary/view_campaigns.html'
     model = Campaign
 
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        return queryset.filter(owner=self.request.user)
 
-class CampaignEntryCreateView(CreateView):
+
+class CampaignEntryCreateView(LoginRequiredMixin, CreateView):
     form_class = CampaignEntryForm
     template_name = 'landing_page/form.html'
 
@@ -61,7 +67,7 @@ class CampaignEntryCreateView(CreateView):
         return f'/view_campaigns/{self.object.chosen_campaign.id}'
 
 
-class CampaignDetailView(ListView):
+class CampaignDetailView(LoginRequiredMixin, ListView):
     template_name = 'campaigns_diary/journal_list.html'
     model = CampaignEntry
 

@@ -1,8 +1,9 @@
 from django import forms
 
-from .models import (Campaign,
-                     CampaignEntry
-                     )
+from .models import (
+    Campaign,
+    CampaignEntry,
+)
 
 
 class CampaignForm(forms.ModelForm):
@@ -13,11 +14,13 @@ class CampaignForm(forms.ModelForm):
             'description',
             'realm',
             'characters',
+            'owner',
         )
         widgets = {
             'name': forms.TextInput,
             'description': forms.Textarea,
             'characters': forms.SelectMultiple,
+            'owner': forms.Select,
         }
 
 
@@ -28,9 +31,11 @@ class CampaignEntryForm(forms.ModelForm):
             'entry_name',
             'entry_content',
             'chosen_campaign',
+            'author',
         )
         widgets = {
             'entry_name': forms.TextInput,
             'entry_content': forms.Textarea,
             'chosen_campaign': forms.Select,
+            'author': forms.Select,
         }

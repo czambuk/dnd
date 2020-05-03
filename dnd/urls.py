@@ -33,19 +33,20 @@ from campaigns_diary.views import (CampaignCreateView,
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   # My urls
-                  # landing_page links and functionalities
+                  # main site
+                  path('', HomePage.as_view()),
+                  # landing_page main views
                   path('new_character', NewCharacterSheet.as_view()),
                   path('view_campaigns', CampaignViewAllView.as_view()),
+                  # TODO path('view_characters', .as_view()),
+                  path('roll_dice', DiceRollView.as_view()),
+                  # login/logout/register
                   path('login', LoginPageView.as_view()),
                   path('logout', LogoutPageView.as_view()),
                   path('register', UserCreateView.as_view()),
-                  # TODO path('view_characters', .as_view()),
-                  path('roll_dice', DiceRollView.as_view()),
                   # char_app
                   path('view_character/<int:id>', ViewCharacterSheet.as_view()),
-                  # main site
-                  path('', HomePage.as_view()),
-                  # manage campaigns
+                  # campaigns_diary
                   path('add_campaign', CampaignCreateView.as_view()),
                   path('view_campaigns/<int:camp_id>', CampaignDetailView.as_view()),
                   path('add_entry', CampaignEntryCreateView.as_view()),
