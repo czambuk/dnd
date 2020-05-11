@@ -1,4 +1,5 @@
 {% extends 'landing_page/main_site.html' %}
+{% load static %}
 
 {% block title %}
 Rzuć kośćmi
@@ -6,11 +7,28 @@ Rzuć kośćmi
 
 {% block content %}
 <div>
+    <!--    WERSJA Z FORMULARZEM POD PYTHONA    -->
+
+    <!--    <form action="" method="post">-->
+    <!--        {% csrf_token %}-->
+    <!--        {{ form }}-->
+    <!--        <input type="submit" value="Rzuć!">-->
+    <!--        <div>{{ result }}</div>-->
+    <!--    </form>-->
+
+    <!--    WERSJA Z JS    -->
     <form action="" method="post">
         {% csrf_token %}
         {{ form }}
-        <input type="submit" value="Rzuć!">
-        <div>{{ result }}</div>
     </form>
+    <button class="dice-button">Rzuć</button>
+    <h3>Wyniki:</h3>
+    <ul class="results">
+
+    </ul>
+
+
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'dice_roller/dice_roller.js' %}"></script>
 {% endblock content %}

@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71197edc-a188-4544-858b-4baf566afe80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/campaigns_diary/migrations/0006_auto_20200503_1251.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dice_roller/static/dice_roller/dice_roller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/campaigns_diary/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/campaigns_diary/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/campaigns_diary/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/campaigns_diary/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/campaigns_diary/templates/campaigns_diary/view_campaigns.html" beforeDir="false" afterPath="$PROJECT_DIR$/campaigns_diary/templates/campaigns_diary/view_campaigns.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/campaigns_diary/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/campaigns_diary/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/char_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice_roller/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/dice_roller/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/char_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dice_roller/templates/dice_roller/dice_roller.html" beforeDir="false" afterPath="$PROJECT_DIR$/dice_roller/templates/dice_roller/dice_roller.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dice_roller/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dice_roller/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dnd/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnd/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dnd/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnd/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,19 +45,19 @@
     <property name="settings.editor.splitter.proportion" value="0.2413442" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tegru\PycharmProjects\dnd\campaigns_diary\templates\campaigns_diary" />
-      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\static\landing_page" />
-      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\templates\landing_page" />
-      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page" />
-      <recent name="C:\Users\tegru\PycharmProjects\dnd\char_app\templates\char_app" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\templates\landing_page" />
       <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\templates" />
       <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\templates\landing_page\registration" />
       <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\static\landing_page" />
       <recent name="C:\Users\tegru\PycharmProjects\dnd\media" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tegru\PycharmProjects\dnd\campaigns_diary\templates\campaigns_diary" />
+      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\static\landing_page" />
+      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\templates\landing_page" />
+      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page" />
+      <recent name="C:\Users\tegru\PycharmProjects\dnd\char_app\templates\char_app" />
     </key>
   </component>
   <component name="RunManager" selected="Python.dice_roll">
@@ -199,22 +192,27 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="486" y="118" width="1022" height="718" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583665029757" />
-    <state x="274" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1588500265392">
+    <state x="274" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1589220922580">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="274" y="209" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1589220922580" />
+    <state x="274" y="209" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589096669298" />
     <state x="274" y="209" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588500265392" />
     <state x="274" y="209" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586769976669" />
-    <state x="1913" y="0" width="974" height="1047" key="dock-window-1" timestamp="1588500215742">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-1" timestamp="1589220921978">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1589220921978" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589096694940" />
     <state x="1913" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588500215742" />
     <state x="853" y="164" key="refactoring.ChangeSignatureDialog" timestamp="1588504329922">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="853" y="164" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588504329922" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586621594773">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589097687959">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589097687959" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586621594773" />
   </component>
 </project>
