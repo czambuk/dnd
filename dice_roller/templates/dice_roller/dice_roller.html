@@ -6,7 +6,7 @@ Rzuć kośćmi
 {% endblock title %}
 
 {% block content %}
-<div>
+<div class="main-form">
     <!--    WERSJA Z FORMULARZEM POD PYTHONA    -->
 
     <!--    <form action="" method="post">-->
@@ -21,7 +21,8 @@ Rzuć kośćmi
         {% csrf_token %}
         {{ form }}
     </form>
-    <button class="dice-button">Rzuć</button>
+    <button class="main-input-button">Rzuć</button>
+
     <h3>Wyniki:</h3>
     <ul class="results">
 

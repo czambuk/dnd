@@ -6,12 +6,14 @@ Formularz
 
 {% block content %}
 <div>
-    <form action="" method="post">
+    <form action="" method="post" class="main-form">
         {% csrf_token %}
         <table>
             {{ form.as_table }}
         </table>
-        <input type="submit" value="Ok!">
+        <div style="text-align: center">
+            <button type="submit" value="Ok!" class="main-input-button">Ok!</button>
+        </div>
     </form>
 </div>
 {% endblock content %}

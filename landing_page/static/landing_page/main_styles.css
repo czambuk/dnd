@@ -3,13 +3,14 @@
 }
 
 body {
-    background-color: var(--main-bg-color);
-    color: black;
+    background: var(--main-bg-color) url("images/background.png") no-repeat;
+    color: white;
     font-size: 16;
     font-family: 'Sen', sans-serif;
     padding: 0;
     margin: 0;
 }
+
 
 a {
     text-decoration: none;
@@ -74,7 +75,7 @@ a {
     height: auto;
     max-height: 400px;
     transition: 1500;
-    background-color: var(--main-bg-color);
+    background-color: transparent;
 }
 
 .mainMenuDesc {
@@ -120,27 +121,47 @@ li {
    text-align: center;
 }
 
-.campaigns-manage button, .confirm-delete button {
-    width: 200px;
-    height: 30px;
-    background-color: LightGrey;
-    text-shadow: 2px 2px 8px grey;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 5px;
-}
-
 .campaigns-manage a {
-    color: black;
+    color: yellow;
     font-weight: bold;
 }
 
-.campaigns-list a , .campaign-name {
-    color: black;
+.campaigns-manage button, .confirm-delete button {
+    background:grey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.campaigns-list button {
+    background:grey;
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.campaigns-list a, .campaign-name {
+    color: white;
     text-shadow: 2px 2px 8px grey;
     text-transform: uppercase;
     text-align: center;
     display: block;
+}
+
+.campaign-name {
+    color: silver;
 }
 
 .confirm-delete {
@@ -153,4 +174,24 @@ li {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 2rem;
+}
+
+.main-form {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 1rem;
+}
+
+.main-input-button {
+    background: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }

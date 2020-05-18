@@ -27,7 +27,9 @@ class CampaignCreateView(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         characters = form.cleaned_data['characters']
         del form.cleaned_data['characters']
-        new_campaign = Campaign.objects.create(**form.cleaned_data)
+        form_data = form.cleaned_data
+        form_data['owner'] = self.request.user
+        new_campaign = Campaign.objects.create(**form_data)
         for char in characters:
             new_campaign.characters.add(Character.objects.get(id=char.id))
         return redirect(f'/view_campaigns/{new_campaign.id}')
@@ -63,8 +65,11 @@ class CampaignEntryCreateView(LoginRequiredMixin, CreateView):
     form_class = CampaignEntryForm
     template_name = 'landing_page/form.html'
 
-    def get_success_url(self):
-        return f'/view_campaigns/{self.object.chosen_campaign.id}'
+    def form_valid(self, form):
+        form_data = form.cleaned_data
+        form_data['author'] = self.request.user
+        CampaignEntry.objects.create(**form_data)
+        return redirect(f'/view_campaigns/{Campaign.objects.get(name=form_data["chosen_campaign"]).id}')
 
 
 class CampaignDetailView(LoginRequiredMixin, ListView):

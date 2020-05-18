@@ -1,5 +1,5 @@
 from django.db import models
-from char_app.models import Player, Character
+from char_app.models import Character
 from django.contrib.auth.models import User
 
 

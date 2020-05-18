@@ -11,7 +11,7 @@ $(document).ready(function() {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     };
 
-    $('.dice-button').on('click', function() {
+    $('.main-input-button').on('click', function() {
          var $throwData = $('input:text').val()
              $dieCode = $throwData.match(/k\d*/)[0]
              $dieSize = $dieCode.match(/\d+/)[0]

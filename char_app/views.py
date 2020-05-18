@@ -3,7 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.template.response import TemplateResponse
 from django.http import HttpResponse, HttpRequest
 from django.views import View
-from .models import Player, Character
+from .models import Character
 
 
 class ViewCharacterSheet(LoginRequiredMixin, View):
@@ -23,7 +23,7 @@ class ViewCharacterSheet(LoginRequiredMixin, View):
 
 class NewCharacterSheet(LoginRequiredMixin, View):
     def get(self, request):
-        title = f"New PC"
+        title = f"Nowy bohater"
         dict = {"page_title": title}
         return TemplateResponse(
             request,
@@ -40,13 +40,12 @@ class NewCharacterSheet(LoginRequiredMixin, View):
         alignment = request.POST.get("alignment")
         experiencepoints = request.POST.get("experiencepoints")
 
-        player = Player.objects.get(name=playername)
+        player = request.user
 
         Character.objects.create(
             name=name,
-            basic_class=classlevel,
-            race=race,
-            player_id=player.id,
+            player=player,
+            # TODO rest of parameters
         )
 
         return TemplateResponse(

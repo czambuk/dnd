@@ -14,13 +14,19 @@ class CampaignForm(forms.ModelForm):
             'description',
             'realm',
             'characters',
-            'owner',
+            # 'owner',
         )
         widgets = {
             'name': forms.TextInput,
             'description': forms.Textarea,
             'characters': forms.SelectMultiple,
-            'owner': forms.Select,
+            # 'owner': forms.HiddenInput,
+        }
+        labels = {
+            'name': 'Nazwa kampanii',
+            'description': 'Opis kampanii',
+            'realm': 'Świat',
+            'characters': 'Bohaterowie',
         }
 
 
@@ -31,11 +37,17 @@ class CampaignEntryForm(forms.ModelForm):
             'entry_name',
             'entry_content',
             'chosen_campaign',
-            'author',
+            # 'author',
         )
         widgets = {
             'entry_name': forms.TextInput,
             'entry_content': forms.Textarea,
             'chosen_campaign': forms.Select,
-            'author': forms.Select,
+            # 'author': forms.Select,
         }
+        labels = {
+            'entry_name':'Tytuł wpisu',
+            'entry_content':'Treść',
+            'chosen_campaign': 'Kampania',
+        }
+

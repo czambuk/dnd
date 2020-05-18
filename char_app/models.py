@@ -1,9 +1,23 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
-class Player(models.Model):
-    name = models.CharField(max_length=128)
-    comment = models.TextField(null=True, default=None)
+class Races(models.Model):
+    name = models.CharField(max_length=48)
+
+    def __str__(self):
+        return self.name
+
+
+class Classes(models.Model):
+    name = models.CharField(max_length=48)
+
+    def __str__(self):
+        return self.name
+
+
+class Alignments(models.Model):
+    name = models.CharField(max_length=48)
 
     def __str__(self):
         return self.name
@@ -12,20 +26,17 @@ class Player(models.Model):
 class Character(models.Model):
     # BASIC INFO
     name = models.CharField(max_length=64)
-    # TODO ManyToMany class relation
-    basic_class = models.CharField(max_length=32)
-    additional_class = models.CharField(max_length=32, null=True, default=None)
+    basic_class = models.ManyToManyField(Classes, related_name='basic_class')
+    additional_class = models.ManyToManyField(Classes, related_name='additional_class')
     basic_level = models.IntegerField(default=1)
     additional_level = models.IntegerField(null=True, default=None)
     experience = models.IntegerField(default=0)
-    # TODO ManyToMany race relation
-    race = models.CharField(max_length=32)
-    alignment = models.IntegerField(default=5)
-    # TODO choices for alignment, 9 choices
+    race = models.ManyToManyField(Races)
+    alignment = models.ManyToManyField(Alignments)
     background = models.CharField(max_length=64, default='TBD')
-    player = models.ForeignKey(Player, on_delete=models.CASCADE)
+    player = models.ForeignKey(User, on_delete=models.CASCADE)
 
     # TODO
 
     def __str__(self):
-        return self.name
+        return f'{self.name}, {self.basic_class}, level {self.basic_level}'
