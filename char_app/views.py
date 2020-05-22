@@ -3,7 +3,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.template.response import TemplateResponse
 from django.http import HttpResponse, HttpRequest
 from django.views import View
-from .models import Character
+from django.views.generic import ListView, DetailView
+from .models import Character, Classes, Races, Alignments
 
 
 class ViewCharacterSheet(LoginRequiredMixin, View):
@@ -24,7 +25,16 @@ class ViewCharacterSheet(LoginRequiredMixin, View):
 class NewCharacterSheet(LoginRequiredMixin, View):
     def get(self, request):
         title = f"Nowy bohater"
-        dict = {"page_title": title}
+        classes = Classes.objects.all
+        races = Races.objects.all
+        alignments = Alignments.objects.all
+
+        dict = {"page_title": title,
+                "classes": classes,
+                "races": races,
+                "alignments": alignments,
+                }
+
         return TemplateResponse(
             request,
             "char_app/char_new.html",
@@ -32,23 +42,66 @@ class NewCharacterSheet(LoginRequiredMixin, View):
         )
 
     def post(self, request):
-        name = request.POST.get("charname")
-        classlevel = request.POST.get("classlevel")
-        background = request.POST.get("background")
-        playername = request.POST.get("playername")
-        race = request.POST.get("race")
-        alignment = request.POST.get("alignment")
-        experiencepoints = request.POST.get("experiencepoints")
+        hero_class = Classes.objects.filter(name=request.POST.get("class"))
+        race = Races.objects.filter(name=request.POST.get("race"))
+        alignment = Alignments.objects.filter(name=request.POST.get("alignment"))
 
-        player = request.user
+        CHECKBOX_MAPPING = {'on': True,
+                            'off': False, }
 
         Character.objects.create(
-            name=name,
-            player=player,
+            name=request.POST.get("charname"),
+            basic_level=request.POST.get("level"),
+            experience=request.POST.get("experiencepoints"),
+            race=race[0],
+            alignment=alignment[0],
+            background=request.POST.get("background"),
+            player=request.user,
+            strength=int(request.POST.get("Strengthscore")),
+            strength_mod=int(request.POST.get("Strengthmod")),
+            dexterity=int(request.POST.get("Dexterityscore")),
+            dexterity_mod=int(request.POST.get("Dexteritymod")),
+            constitution=int(request.POST.get("Constitutionscore")),
+            constitution_mod=int(request.POST.get("Constitutionmod")),
+            wisdom=int(request.POST.get("Wisdomscore")),
+            wisdom_mod=int(request.POST.get("Wisdommod")),
+            intelligence=int(request.POST.get("Intelligencescore")),
+            intelligence_mod=int(request.POST.get("Intelligencemod")),
+            charisma=int(request.POST.get("Charismascore")),
+            charisma_mod=int(request.POST.get("Charismamod")),
+            proficiency_bonus=int(request.POST.get("proficiencybonus")),
+            strength_save_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Strength-save-prof"))),
+            strength_save_mod=request.POST.get("Strength-save"),
+            dexterity_save_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Dexterity-save-prof"))),
+            dexterity_save_mod=request.POST.get("Dexterity-save"),
+            constitution_save_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Constitution-save-prof"))),
+            constitution_save_mod=request.POST.get("Constitution-save"),
+            wisdom_save_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Wisdom-save-prof"))),
+            wisdom_save_mod=request.POST.get("Wisdom-save"),
+            intelligence_save_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Intelligence-save-prof"))),
+            intelligence_save_mod=request.POST.get("Intelligence-save"),
+            charisma_save_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Charisma-save-prof"))),
+            charisma_save_mod=request.POST.get("Charisma-save"),
             # TODO rest of parameters
         )
+
+        new_char = Character.objects.get(name=request.POST.get("charname"))
+        new_char.hero_classes.set(hero_class)
+        new_char.save()
 
         return TemplateResponse(
             request,
             "char_app/char_new.html",
         )
+
+
+class AllHeroesListView(LoginRequiredMixin, ListView):
+    model = Character
+    ordering = "name"
+    template_name = "char_app/char_list.html"
+
+
+class HeroDetailView(LoginRequiredMixin, DetailView):
+    model = Character
+    pk_url_kwarg = 'id'
+    template_name = "char_app/char_view.html"

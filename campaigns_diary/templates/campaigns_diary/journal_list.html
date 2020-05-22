@@ -6,16 +6,18 @@ Lista
 
 {% block content %}
 <div class="campaigns-manage">
-    <a href="/add_entry" title="Dodaj wpis dziennika">
+    <a href="/add_entry/{{ chosen_campaign.id }}" title="Dodaj wpis dziennika">
         <button>Dodaj wpis dziennika</button>
     </a>
     <ul>
         <li><h3>Nazwa kampanii: {{ chosen_campaign }}</h3></li>
-        <ul>Bohaterowie:
+        <li>Bohaterowie:
             {% for char in chosen_campaign.characters.all %}
-            <li>{{ char.name }}</li>
+            {{ char.name }}
             {% endfor %}
-        </ul>
+        </li>
+    </ul>
+    <ul>
         {% for entry in entries %}
         <li>Tytuł wpisu: {{ entry.entry_name }}<br>
             Treść: {{ entry.entry_content }}<br>

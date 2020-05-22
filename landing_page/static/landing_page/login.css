@@ -8,5 +8,9 @@
     width: 100px;
     height: 25px;
     font-weight: bold;
+}
 
+a {
+    color: gold;
+    text-decoration: none;
 }

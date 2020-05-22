@@ -17,16 +17,20 @@ Rzuć kośćmi
     <!--    </form>-->
 
     <!--    WERSJA Z JS    -->
-    <form action="" method="post">
-        {% csrf_token %}
-        {{ form }}
-    </form>
-    <button class="main-input-button">Rzuć</button>
-
+    <!--    <form action="" method="post">-->
+    <!--        {% csrf_token %}-->
+    <!--        {{ form }}-->
+    <!--    </form>-->
+    <p class="dice-paragraph">
+        <textarea style="resize: none" autofocus rows="1" id="id_roll_data">2k12+3</textarea>
+    </p>
+    <p class="dice-paragraph">
+        <button class="main-input-button">Rzuć</button>
+    </p>
     <h3>Wyniki:</h3>
-    <ul class="results">
+    <div class="results">
 
-    </ul>
+    </div>
 
 
 </div>

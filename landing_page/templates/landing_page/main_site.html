@@ -2,13 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% block styles %}
+    <!--    additional styles in templates -->
+    {% endblock styles %}
     <link rel="stylesheet" type="text/css" href="{% static 'landing_page/main_styles.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
-
+    <link rel="icon" href="{% static 'landing_page/images/dragon-icon.ico' %}">
     <meta charset="UTF-8">
     <title>
         {% block title %}
-        {{ page_title|default:"Main site" }}
+        {{ page_title|default:"Pomocnik D&D" }}
         {% endblock title %}
     </title>
 </head>
@@ -31,7 +34,7 @@
 <div class="content-links">
     <div class="mainMenuItem">
         <a href="/new_character" title="NOWY BOHATER">
-            <img src="{% static '/landing_page/hero-icon.png' %}">
+            <img src="{% static '/landing_page/images/hero-icon.png' %}">
         </a>
         <div class="mainMenuDesc hidden">
             NOWY BOHATER
@@ -39,7 +42,7 @@
     </div>
     <div class="mainMenuItem">
         <a href="/view_campaigns" title="WYŚWIETL KAMPANIE">
-            <img src="{% static '/landing_page/campaign-icon.png' %}">
+            <img src="{% static '/landing_page/images/campaign-icon.png' %}">
         </a>
         <div class="mainMenuDesc hidden">
             WYŚWIETL KAMPANIE
@@ -48,7 +51,7 @@
 
     <div class="mainMenuItem">
         <a href="/view_characters" title="WYŚWIETL BOHATERÓW">
-            <img src="{% static '/landing_page/characters-icon.png' %}">
+            <img src="{% static '/landing_page/images/characters-icon.png' %}">
         </a>
         <div class="mainMenuDesc hidden">
             WYŚWIETL BOHATERÓW
@@ -56,7 +59,7 @@
     </div>
     <div class="mainMenuItem">
         <a href="/roll_dice" title="RZUĆ KOŚĆMI!">
-            <img src="{% static '/landing_page/dice-icon.png' %}">
+            <img src="{% static '/landing_page/images/dice-icon.png' %}">
         </a>
         <div class="mainMenuDesc hidden">
             RZUĆ KOŚĆMI!
@@ -68,7 +71,12 @@
     <img src="{% static '/landing_page/warrior.png' %}">
 </div>
 {% endblock content %}
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="{% static 'landing_page/main_site.js' %}"></script>
+
+{% block scripts %}
+
+{% endblock scripts %}
 </body>
 </html>

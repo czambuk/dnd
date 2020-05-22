@@ -68,6 +68,7 @@ class CampaignEntryCreateView(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form_data = form.cleaned_data
         form_data['author'] = self.request.user
+        form_data['chosen_campaign'] = Campaign.objects.get(id=self.kwargs['id'])
         CampaignEntry.objects.create(**form_data)
         return redirect(f'/view_campaigns/{Campaign.objects.get(name=form_data["chosen_campaign"]).id}')
 

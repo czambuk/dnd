@@ -19,7 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 # From Apps
-from char_app.views import ViewCharacterSheet, NewCharacterSheet
+from char_app.views import ViewCharacterSheet, NewCharacterSheet, AllHeroesListView, HeroDetailView
 from landing_page.views import HomePage, LoginPageView, LogoutPageView, UserCreateView
 from dice_roller.views import DiceRollView
 from campaigns_diary.views import (CampaignCreateView,
@@ -38,18 +38,18 @@ urlpatterns = [
                   # landing_page main views
                   path('new_character', NewCharacterSheet.as_view()),
                   path('view_campaigns', CampaignViewAllView.as_view()),
-                  # TODO path('view_characters', .as_view()),
+                  path('view_characters', AllHeroesListView.as_view()),
                   path('roll_dice', DiceRollView.as_view()),
                   # login/logout/register
                   path('login', LoginPageView.as_view()),
                   path('logout', LogoutPageView.as_view()),
                   path('register', UserCreateView.as_view()),
                   # char_app
-                  path('view_character/<int:id>', ViewCharacterSheet.as_view()),
+                  path('view_character/<int:id>', HeroDetailView.as_view()),
                   # campaigns_diary
                   path('add_campaign', CampaignCreateView.as_view()),
                   path('view_campaigns/<int:camp_id>', CampaignDetailView.as_view()),
-                  path('add_entry', CampaignEntryCreateView.as_view()),
+                  path('add_entry/<int:id>', CampaignEntryCreateView.as_view()),
                   path('delete_campaign/<int:campaign_id>', CampaignDeleteView.as_view()),
                   path('update_campaign/<int:campaign_id>', CampaignUpdateView.as_view()),
               ] + static(settings.STATIC_URL,

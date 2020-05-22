@@ -36,18 +36,18 @@ class CampaignEntryForm(forms.ModelForm):
         fields = (
             'entry_name',
             'entry_content',
-            'chosen_campaign',
+            # 'chosen_campaign',
             # 'author',
         )
         widgets = {
             'entry_name': forms.TextInput,
             'entry_content': forms.Textarea,
-            'chosen_campaign': forms.Select,
+            # 'chosen_campaign': forms.Select,
             # 'author': forms.Select,
         }
         labels = {
             'entry_name':'Tytuł wpisu',
             'entry_content':'Treść',
-            'chosen_campaign': 'Kampania',
+            # 'chosen_campaign': 'Kampania',
         }
 

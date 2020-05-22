@@ -179,8 +179,9 @@ li {
 .main-form {
     position: absolute;
     top: 10%;
-    left: 40%;
+    left: 25%;
     font-size: 1rem;
+    width: 50%;
 }
 
 .main-input-button {
@@ -194,4 +195,8 @@ li {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+p.dice-paragraph {
+    text-align: center;
 }

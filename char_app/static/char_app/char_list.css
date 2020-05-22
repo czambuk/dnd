@@ -1,0 +1,30 @@
+th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 5px;
+}
+
+table {
+    width: 70%;
+    position: absolute;
+    justify-items: center;
+    align-items: center;
+    top: 15%;
+    left: 15%;
+ }
+
+th {
+    text-transform: uppercase;
+}
+
+td {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    -webkit-filter: drop-shadow(0px 0px 5px lightgrey);
+    filter: drop-shadow(0px 0px 5px lightgrey);
+}

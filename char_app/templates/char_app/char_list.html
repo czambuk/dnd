@@ -1,0 +1,44 @@
+{% extends 'landing_page/main_site.html' %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'char_app/char_list.css' %}">
+
+{% endblock styles %}
+
+{% block title %}
+Lista bohaterów
+{% endblock title %}
+
+{% block content %}
+<div class="list-view">
+    <table class="character-list">
+        <thead>
+        <tr>
+            <th>Imię</th>
+            <th>Poziom</th>
+            <th>Klasa</th>
+            <th>Rasa</th>
+            <th>Charakter</th>
+            <th>Gracz</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for char in object_list %}
+        <tr>
+            <td><a href="/view_character/{{ char.id }}">{{ char.name }}</a></td>
+            <td>{{ char.basic_level }}</td>
+            <td>
+                {% for c in char.hero_classes.all %}
+                {{ c.name }}
+                {% endfor %}
+            </td>
+            <td>{{ char.race }}</td>
+            <td>{{ char.alignment }}</td>
+            <td>{{ char.player }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock content %}

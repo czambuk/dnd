@@ -64,6 +64,10 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
+input[type="checkbox"]:checked {
+  background-color: black;
+}
+
 div.box {
   margin-top: 10px;
 }
@@ -178,12 +182,27 @@ form.charsheet header section.misc ul li {
   -webkit-box-direction: reverse;
           flex-direction: column-reverse;
 }
+
+#class, #level {
+  width: 50%;
+ }
+
+form.charsheet header section.misc ul li.classlevel {
+  -webkit-box-orient: horizontal;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
 form.charsheet header section.misc ul li label {
   margin-bottom: 5px;
 }
 form.charsheet header section.misc ul li input {
   border: 0;
   border-bottom: 1px solid #ddd;
+}
+
+select {
+    border: 0px solid transparent;
+    border-bottom: 1px solid #ddd;
 }
 form.charsheet main {
   display: -webkit-box;
@@ -627,6 +646,7 @@ form.charsheet main section.combat > div.deathsaves > div div.bubbles input[type
 }
 form.charsheet main section.combat > div.deathsaves > div div.bubbles input[type="checkbox"]:checked {
   background-color: black;
+
 }
 form.charsheet main section.attacksandspellcasting {
   border: 1px solid black;
@@ -769,11 +789,21 @@ form.charsheet main section.features div {
   -webkit-box-direction: reverse;
           flex-direction: column-reverse;
 }
+
 form.charsheet main section.features div label {
   text-align: center;
 }
+
 form.charsheet main section.features div textarea {
   border: 0;
   padding: 5px;
   height: 43em;
 }
+
+.charsheet {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border: 5px solid grey;
+}
+
