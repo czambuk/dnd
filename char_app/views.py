@@ -50,6 +50,7 @@ class NewCharacterSheet(LoginRequiredMixin, View):
                             'off': False, }
 
         Character.objects.create(
+            # BASIC INFO
             name=request.POST.get("charname"),
             basic_level=request.POST.get("level"),
             experience=request.POST.get("experiencepoints"),
@@ -57,6 +58,7 @@ class NewCharacterSheet(LoginRequiredMixin, View):
             alignment=alignment[0],
             background=request.POST.get("background"),
             player=request.user,
+            # MAIN STATS
             strength=int(request.POST.get("Strengthscore")),
             strength_mod=int(request.POST.get("Strengthmod")),
             dexterity=int(request.POST.get("Dexterityscore")),
@@ -69,7 +71,7 @@ class NewCharacterSheet(LoginRequiredMixin, View):
             intelligence_mod=int(request.POST.get("Intelligencemod")),
             charisma=int(request.POST.get("Charismascore")),
             charisma_mod=int(request.POST.get("Charismamod")),
-            proficiency_bonus=int(request.POST.get("proficiencybonus")),
+            # SAVING THROWS
             strength_save_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Strength-save-prof"))),
             strength_save_mod=request.POST.get("Strength-save"),
             dexterity_save_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Dexterity-save-prof"))),
@@ -82,6 +84,31 @@ class NewCharacterSheet(LoginRequiredMixin, View):
             intelligence_save_mod=request.POST.get("Intelligence-save"),
             charisma_save_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Charisma-save-prof"))),
             charisma_save_mod=request.POST.get("Charisma-save"),
+            # PROFICIENCIES
+            proficiency_bonus=int(request.POST.get("proficiencybonus")),
+            acrobatics_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Acrobatics-prof"))),
+            animal_handling_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Animal Handling-prof"))),
+            arcana_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Arcana-prof"))),
+            athletics_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Athletics-prof"))),
+            deception_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Deception-prof"))),
+            history_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("History-prof"))),
+            insight_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Insight-prof"))),
+            intimidation_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Intimidation-prof"))),
+            investigation_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Investigation-prof"))),
+            medicine_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Medicine-prof"))),
+            nature_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Nature-prof"))),
+            perception_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Perception-prof"))),
+            performance_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Performance-prof"))),
+            persuasion_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Persuasion-prof"))),
+            religion_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Religion-prof"))),
+            sleight_of_hand_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Sleight of Hand-prof"))),
+            stealth_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Stealth-prof"))),
+            survival_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Survival-prof"))),
+            passive_perception=int(request.POST.get("passiveperception")),
+            # COMBAT AND MOVEMENT
+            armor_class=int(request.POST.get("ac")),
+            speed=request.POST.get("speed"),
+
             # TODO rest of parameters
         )
 

@@ -23,6 +23,25 @@ $(".stat").bind("input", function () {
     }
 );
 
+var $profBonus = $("#proficiencybonus").val();
+var $profBool = $(".save-prof").val();
+
+$(".save-prof").bind("input", function () {
+    var $profBool = $(this).val();
+    var $inputName = $(this).attr('id');
+    var $saveName = $inputName.slice(0,$inputName.indexOf("-prof"));
+    var $statModName = $saveName.slice(0,$saveName.indexOf("-save"))+"mod";
+
+    if ($profBool == "on") {
+        var $modValue = parseInt($("[id='" + $statModName + "']").val()) + parseInt($profBonus)
+    } else {
+        var $modValue = $("[id='" + $statModName + "']").val()
+    }
+
+    $("[id='" + $saveName + "']").val($modValue);
+})
+
+
 $("[id='level']").bind("input", function () {
     var classes = $(this).val();
     var r = new RegExp(/\d+/g);

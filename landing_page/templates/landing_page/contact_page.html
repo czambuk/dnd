@@ -1,0 +1,20 @@
+{% extends 'landing_page/main_site.html' %}
+{% load static %}
+
+{% block title %}
+Kontakt
+{% endblock title %}
+
+{% block content %}
+<div>
+    <form action="" method="post" class="main-form">
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <div style="text-align: center">
+            <button type="submit" value="Ok!" class="main-input-button">Wyślij!</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}

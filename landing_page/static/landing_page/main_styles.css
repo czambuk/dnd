@@ -3,7 +3,9 @@
 }
 
 body {
-    background: var(--main-bg-color) url("images/background.png") no-repeat;
+    background: var(--main-bg-color) url("images/background.png");
+    background-repeat: no-repeat;
+    background-size: auto;
     color: white;
     font-size: 16;
     font-family: 'Sen', sans-serif;
@@ -51,8 +53,8 @@ a {
     display: grid;
     width: auto;
     height: auto;
-    max-width: 900px;
-    max-height: 400px;
+    max-width: 50%;
+    max-height: 40%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.1fr;
     grid-gap: 20px;
@@ -71,9 +73,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: auto;
     height: auto;
-    max-height: 400px;
+    max-height: 100%;
     transition: 1500;
     background-color: transparent;
 }
@@ -199,4 +201,9 @@ li {
 
 p.dice-paragraph {
     text-align: center;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
 }

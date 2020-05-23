@@ -26,3 +26,9 @@ class UserCreateForm(forms.ModelForm):
         super().clean()
         if self.cleaned_data['password'] != self.cleaned_data['password_repeat']:
             raise ValidationError('Passwords need to match')
+
+
+class ContactForm(forms.Form):
+    name = forms.CharField(max_length=100, label="Imię i nazwisko")
+    email = forms.EmailField(label="Adres e-mail")
+    message = forms.CharField(widget=forms.Textarea, label="Wiadomość")
