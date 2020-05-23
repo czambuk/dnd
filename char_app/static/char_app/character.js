@@ -24,21 +24,46 @@ $(".stat").bind("input", function () {
 );
 
 var $profBonus = $("#proficiencybonus").val();
-var $profBool = $(".save-prof").val();
 
-$(".save-prof").bind("input", function () {
-    var $profBool = $(this).val();
+$(".save-mod").each(function () {
     var $inputName = $(this).attr('id');
-    var $saveName = $inputName.slice(0,$inputName.indexOf("-prof"));
-    var $statModName = $saveName.slice(0,$saveName.indexOf("-save"))+"mod";
+    var $saveProfName = $inputName + '-prof';
+    var $statName = $inputName.slice(0,$inputName.indexOf("-save"));
+    var $statModName = $statName + 'mod';
+    var $profBool = $(this).next();
 
-    if ($profBool == "on") {
+    if ($profBool.attr("checked")) {
+        var $modValue = parseInt($("[id='" + $statModName + "']").val()) + parseInt($profBonus)
+    } else {
+        var $modValue = $("[id='" + $statModName + "']").val()
+    }
+    $(this).val($modValue);
+})
+
+var skillsDict = {
+    "Sił": "Strength",
+    "Zrc": "Dexterity",
+    "Knd": "Constitution",
+    "Mdr": "Wisdom",
+    "Int": "Intelligence",
+    "Cha": "Charisma",
+}
+
+$(".skill-mod").each(function () {
+    var $inputName = $(this).attr('id');
+    var $saveProfName = $inputName + '-prof';
+    var $statAbbr = $(this).prev().text().slice(-4,-1);
+    var $statName = skillsDict[$statAbbr];
+    var $statModName = $statName + 'mod';
+    var $profBool = $(this).next();
+
+    if ($profBool.attr("checked")) {
         var $modValue = parseInt($("[id='" + $statModName + "']").val()) + parseInt($profBonus)
     } else {
         var $modValue = $("[id='" + $statModName + "']").val()
     }
 
-    $("[id='" + $saveName + "']").val($modValue);
+    $(this).val($modValue);
 })
 
 

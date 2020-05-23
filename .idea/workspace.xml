@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71197edc-a188-4544-858b-4baf566afe80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/char_app/migrations/0014_auto_20200523_1005.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/char_app/migrations/0015_auto_20200523_1009.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/char_app/migrations/0016_auto_20200523_1021.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/char_app/migrations/0017_auto_20200523_1032.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/char_app/migrations/0018_auto_20200523_1038.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/char_app/migrations/0019_auto_20200523_1047.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/char_app/migrations/0020_auto_20200523_1048.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing_page/templates/landing_page/contact_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/campaigns_diary/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/campaigns_diary/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/campaigns_diary/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/campaigns_diary/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/char_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/char_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/char_app/static/char_app/character.js" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/static/char_app/character.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/char_app/templates/char_app/char_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/templates/char_app/char_view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/char_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dnd/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnd/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dnd/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnd/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing_page/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing_page/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing_page/static/landing_page/main_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/static/landing_page/main_styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing_page/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -212,10 +195,10 @@
     </state>
     <state x="-1434" y="118" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590159340037" />
     <state x="486" y="118" width="1022" height="718" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583665029757" />
-    <state x="274" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1590220676145">
+    <state x="274" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1590247395243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="274" y="209" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590220676145" />
+    <state x="274" y="209" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590247395243" />
     <state x="274" y="209" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589096669298" />
     <state x="274" y="209" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588500265392" />
     <state x="274" y="209" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586769976669" />
@@ -223,10 +206,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-995" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590179601645" />
-    <state x="-35" y="104" width="1600" height="828" key="dock-window-1" timestamp="1590222912201">
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-1" timestamp="1590247439871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="-35" y="104" width="1600" height="828" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590222912201" />
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590247439871" />
     <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589096694940" />
     <state x="1913" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588500215742" />
     <state x="853" y="164" key="refactoring.ChangeSignatureDialog" timestamp="1588504329922">

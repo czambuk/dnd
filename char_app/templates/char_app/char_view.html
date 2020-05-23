@@ -131,17 +131,19 @@
                         <ul>
                             <li>
                                 <label for="Strength-save">Siła</label>
-                                <input class="save-mod" id="Strength-save" name="Strength-save" type="text"/>
-                                <input class="save-prof" id="Strength-save-prof" name="Strength-save-prof" type="checkbox"
+                                <input class="save-mod" id="Strength-save" name="Strength-save" type="text" readonly/>
+                                <input class="save-prof" id="Strength-save-prof" name="Strength-save-prof"
+                                       type="checkbox"
                                        {% if object.strength_save_prof == True %}
                                        checked
                                        {% endif %}
-                                       />
+                                       disabled="disabled"/>
                             </li>
                             <li>
                                 <label for="Dexterity-save">Zręczność</label>
-                                <input class="save-mod" id="Dexterity-save" name="Dexterity-save" type="text"/>
-                                <input class="save-prof" id="Dexterity-save-prof" name="Dexterity-save-prof" type="checkbox"
+                                <input class="save-mod" id="Dexterity-save" name="Dexterity-save" type="text" readonly/>
+                                <input class="save-prof" id="Dexterity-save-prof" name="Dexterity-save-prof"
+                                       type="checkbox"
                                        {% if object.dexterity_save_prof == True %}
                                        checked
                                        {% endif %}
@@ -149,8 +151,9 @@
                             </li>
                             <li>
                                 <label for="Constitution-save">Kondycja</label>
-                                <input class="save-mod" id="Constitution-save" name="Constitution-save" type="text"/>
-                                <input class="save-prof" id="Constitution-save-prof" name="Constitution-save-prof" type="checkbox"
+                                <input class="save-mod" id="Constitution-save" name="Constitution-save" type="text" readonly/>
+                                <input class="save-prof" id="Constitution-save-prof" name="Constitution-save-prof"
+                                       type="checkbox"
                                        {% if object.constitution_save_prof == True %}
                                        checked
                                        {% endif %}
@@ -158,7 +161,7 @@
                             </li>
                             <li>
                                 <label for="Wisdom-save">Mądrość</label>
-                                <input class="save-mod" id="Wisdom-save" name="Wisdom-save" type="text"/>
+                                <input class="save-mod" id="Wisdom-save" name="Wisdom-save" type="text" readonly/>
                                 <input class="save-prof" id="Wisdom-save-prof" name="Wisdom-save-prof" type="checkbox"
                                        {% if object.wisdom_save_prof == True %}
                                        checked
@@ -167,8 +170,9 @@
                             </li>
                             <li>
                                 <label for="Intelligence-save">Inteligencja</label>
-                                <input class="save-mod" id="Intelligence-save" name="Intelligence-save" type="text"/>
-                                <input class="save-prof" id="Intelligence-save-prof" name="Intelligence-save-prof" type="checkbox"
+                                <input class="save-mod" id="Intelligence-save" name="Intelligence-save" type="text" readonly/>
+                                <input class="save-prof" id="Intelligence-save-prof" name="Intelligence-save-prof"
+                                       type="checkbox"
                                        {% if object.intelligence_save_prof == True %}
                                        checked
                                        {% endif %}
@@ -176,8 +180,9 @@
                             </li>
                             <li>
                                 <label for="Charisma-save">Charyzma</label>
-                                <input class="save-mod" id="Charisma-save" name="Charisma-save" type="text"/>
-                                <input class="save-prof" id="Charisma-save-prof" name="Charisma-save-prof" type="checkbox"
+                                <input class="save-mod" id="Charisma-save" name="Charisma-save" type="text" readonly/>
+                                <input class="save-prof" id="Charisma-save-prof" name="Charisma-save-prof"
+                                       type="checkbox"
                                        {% if object.charisma_save_prof == True %}
                                        checked
                                        {% endif %}
@@ -193,8 +198,8 @@
                         <ul>
                             <li>
                                 <label for="Acrobatics">Akrobatyka <span class="skill">(Zrc)</span></label>
-                                <input id="Acrobatics" name="Acrobatics" type="text"/>
-                                <input id="Acrobatics-prof" name="Acrobatics-prof" type="checkbox"
+                                <input class="skill-mod" id="Acrobatics" name="Acrobatics" type="text" readonly/>
+                                <input class="skill-prof" id="Acrobatics-prof" name="Acrobatics-prof" type="checkbox"
                                        {% if object.acrobatics_prof == True %}
                                        checked
                                        {% endif %}
@@ -203,8 +208,8 @@
                             <li>
                                 <label for="Animal Handling">Op. nad zwierz. <span
                                         class="skill">(Mdr)</span></label>
-                                <input id="Animal Handling" name="Animal Handling" type="text"/>
-                                <input id="Animal Handling-prof" name="Animal Handling-prof" type="checkbox"
+                                <input class="skill-mod" id="Animal Handling" name="Animal Handling" type="text" readonly/>
+                                <input class="skill-prof" id="Animal Handling-prof" name="Animal Handling-prof" type="checkbox"
                                        {% if object.animal_handling_prof == True %}
                                        checked
                                        {% endif %}
@@ -212,17 +217,17 @@
                             </li>
                             <li>
                                 <label for="Arcana">Wiedza tajemna <span class="skill">(Int)</span></label>
-                                <input id="Arcana" name="Arcana" type="text"/>
-                                <input id="Arcana-prof" name="Arcana-prof" type="checkbox"
+                                <input class="skill-mod" id="Arcana" name="Arcana" type="text" readonly/>
+                                <input class="skill-prof" id="Arcana-prof" name="Arcana-prof" type="checkbox"
                                        {% if object.arcana_prof == True %}
                                        checked
                                        {% endif %}
                                        disabled="disabled"/>
                             </li>
                             <li>
-                                <label for="Athletics">Atletyka <span class="skill">(Str)</span></label>
-                                <input id="Athletics" name="Athletics" type="text"/>
-                                <input id="Athletics-prof" name="Athletics-prof" type="checkbox"
+                                <label for="Athletics">Atletyka <span class="skill">(Sił)</span></label>
+                                <input class="skill-mod" id="Athletics" name="Athletics" type="text" readonly/>
+                                <input class="skill-prof" id="Athletics-prof" name="Athletics-prof" type="checkbox"
                                        {% if object.athletics_prof == True %}
                                        checked
                                        {% endif %}
@@ -230,8 +235,8 @@
                             </li>
                             <li>
                                 <label for="Deception">Oszustwo <span class="skill">(Cha)</span></label>
-                                <input id="Deception" name="Deception" type="text"/>
-                                <input id="Deception-prof" name="Deception-prof" type="checkbox"
+                                <input class="skill-mod" id="Deception" name="Deception" type="text" readonly/>
+                                <input class="skill-prof" id="Deception-prof" name="Deception-prof" type="checkbox"
                                        {% if object.deception_prof == True %}
                                        checked
                                        {% endif %}
@@ -239,8 +244,8 @@
                             </li>
                             <li>
                                 <label for="History">Historia <span class="skill">(Int)</span></label>
-                                <input id="History" name="History" type="text"/>
-                                <input id="History-prof" name="History-prof" type="checkbox"
+                                <input class="skill-mod" id="History" name="History" type="text" readonly/>
+                                <input class="skill-prof" id="History-prof" name="History-prof" type="checkbox"
                                        {% if object.history_prof == True %}
                                        checked
                                        {% endif %}
@@ -248,8 +253,8 @@
                             </li>
                             <li>
                                 <label for="Insight">Intuicja <span class="skill">(Mdr)</span></label>
-                                <input id="Insight" name="Insight" type="text"/>
-                                <input id="Insight-prof" name="Insight-prof" type="checkbox"
+                                <input class="skill-mod" id="Insight" name="Insight" type="text" readonly/>
+                                <input class="skill-prof" id="Insight-prof" name="Insight-prof" type="checkbox"
                                        {% if object.insight_prof == True %}
                                        checked
                                        {% endif %}
@@ -257,8 +262,8 @@
                             </li>
                             <li>
                                 <label for="Intimidation">Zastraszenie <span class="skill">(Cha)</span></label>
-                                <input id="Intimidation" name="Intimidation" type="text"/>
-                                <input id="Intimidation-prof" name="Intimidation-prof" type="checkbox"
+                                <input class="skill-mod" id="Intimidation" name="Intimidation" type="text" readonly/>
+                                <input class="skill-prof" id="Intimidation-prof" name="Intimidation-prof" type="checkbox"
                                        {% if object.intimidation_prof == True %}
                                        checked
                                        {% endif %}
@@ -266,8 +271,8 @@
                             </li>
                             <li>
                                 <label for="Investigation">Śledztwo <span class="skill">(Int)</span></label>
-                                <input id="Investigation" name="Investigation" type="text"/>
-                                <input id="Investigation-prof" name="Investigation-prof" type="checkbox"
+                                <input class="skill-mod" id="Investigation" name="Investigation" type="text" readonly/>
+                                <input class="skill-prof" id="Investigation-prof" name="Investigation-prof" type="checkbox"
                                        {% if object.investigation_prof == True %}
                                        checked
                                        {% endif %}
@@ -275,8 +280,8 @@
                             </li>
                             <li>
                                 <label for="Medicine">Medycyna <span class="skill">(Mdr)</span></label>
-                                <input id="Medicine" name="Medicine" type="text"/>
-                                <input id="Medicine-prof" name="Medicine-prof" type="checkbox"
+                                <input class="skill-mod" id="Medicine" name="Medicine" type="text" readonly/>
+                                <input class="skill-prof" id="Medicine-prof" name="Medicine-prof" type="checkbox"
                                        {% if object.medicine_prof == True %}
                                        checked
                                        {% endif %}
@@ -284,8 +289,8 @@
                             </li>
                             <li>
                                 <label for="Nature">Przyroda <span class="skill">(Int)</span></label>
-                                <input id="Nature" name="Nature" type="text"/>
-                                <input id="Nature-prof" name="Nature-prof" type="checkbox"
+                                <input class="skill-mod" id="Nature" name="Nature" type="text" readonly/>
+                                <input class="skill-prof" id="Nature-prof" name="Nature-prof" type="checkbox"
                                        {% if object.nature_prof == True %}
                                        checked
                                        {% endif %}
@@ -293,8 +298,8 @@
                             </li>
                             <li>
                                 <label for="Perception">Percepcja <span class="skill">(Mdr)</span></label>
-                                <input id="Perception" name="Perception" type="text"/>
-                                <input id="Perception-prof" name="Perception-prof" type="checkbox"
+                                <input class="skill-mod" id="Perception" name="Perception" type="text" readonly/>
+                                <input class="skill-prof" id="Perception-prof" name="Perception-prof" type="checkbox"
                                        {% if object.perception_prof == True %}
                                        checked
                                        {% endif %}
@@ -302,8 +307,8 @@
                             </li>
                             <li>
                                 <label for="Performance">Występy <span class="skill">(Cha)</span></label>
-                                <input id="Performance" name="Performance" type="text"/>
-                                <input id="Performance-prof" name="Performance-prof" type="checkbox"
+                                <input class="skill-mod" id="Performance" name="Performance" type="text" readonly/>
+                                <input class="skill-prof" id="Performance-prof" name="Performance-prof" type="checkbox"
                                        {% if object.performance_prof == True %}
                                        checked
                                        {% endif %}
@@ -311,8 +316,8 @@
                             </li>
                             <li>
                                 <label for="Persuasion">Perswazja <span class="skill">(Cha)</span></label>
-                                <input id="Persuasion" name="Persuasion" type="text"/>
-                                <input id="Persuasion-prof" name="Persuasion-prof" type="checkbox"
+                                <input class="skill-mod" id="Persuasion" name="Persuasion" type="text" readonly/>
+                                <input class="skill-prof" id="Persuasion-prof" name="Persuasion-prof" type="checkbox"
                                        {% if object.persuasion_prof == True %}
                                        checked
                                        {% endif %}
@@ -320,8 +325,8 @@
                             </li>
                             <li>
                                 <label for="Religion">Religia <span class="skill">(Int)</span></label>
-                                <input id="Religion" name="Religion" type="text"/>
-                                <input id="Religion-prof" name="Religion-prof" type="checkbox"
+                                <input class="skill-mod" id="Religion" name="Religion" type="text" readonly/>
+                                <input class="skill-prof" id="Religion-prof" name="Religion-prof" type="checkbox"
                                        {% if object.religion_prof == True %}
                                        checked
                                        {% endif %}
@@ -329,8 +334,8 @@
                             </li>
                             <li>
                                 <label for="Sleight of Hand">Zwinne dłonie <span class="skill">(Zrc)</span></label>
-                                <input id="Sleight of Hand" name="Sleight of Hand" type="text"/>
-                                <input id="Sleight of Hand-prof" name="Sleight of Hand-prof" type="checkbox"
+                                <input class="skill-mod" id="Sleight of Hand" name="Sleight of Hand" type="text" readonly/>
+                                <input class="skill-prof" id="Sleight of Hand-prof" name="Sleight of Hand-prof" type="checkbox"
                                        {% if object.sleigh_of_hand_prof == True %}
                                        checked
                                        {% endif %}
@@ -338,8 +343,8 @@
                             </li>
                             <li>
                                 <label for="Stealth">Skradanie się <span class="skill">(Zrc)</span></label>
-                                <input id="Stealth" name="Stealth" type="text"/>
-                                <input id="Stealth-prof" name="Stealth-prof" type="checkbox"
+                                <input class="skill-mod" id="Stealth" name="Stealth" type="text" readonly/>
+                                <input class="skill-prof" id="Stealth-prof" name="Stealth-prof" type="checkbox"
                                        {% if object.stealth_prof == True %}
                                        checked
                                        {% endif %}
@@ -347,8 +352,8 @@
                             </li>
                             <li>
                                 <label for="Survival">Szt. przetrwania <span class="skill">(Mdr)</span></label>
-                                <input id="Survival" name="Survival" type="text"/>
-                                <input id="Survival-prof" name="Survival-prof" type="checkbox"
+                                <input class="skill-mod" id="Survival" name="Survival" type="text" readonly/>
+                                <input class="skill-prof" id="Survival-prof" name="Survival-prof" type="checkbox"
                                        {% if object.survival_prof == True %}
                                        checked
                                        {% endif %}
@@ -378,7 +383,7 @@
                 <div class="armorclass">
                     <div>
                         <label for="ac">Klasa Pancerza</label>
-                        <input id="ac" name="ac"value="{{ object.armor_class }}" readonly type="text"/>
+                        <input id="ac" name="ac" value="{{ object.armor_class }}" readonly type="text"/>
                     </div>
                 </div>
                 <div class="initiative">

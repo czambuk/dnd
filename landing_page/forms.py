@@ -18,6 +18,15 @@ class UserCreateForm(forms.ModelForm):
             'email',
         )
 
+        labels = {
+            'username': 'Nazwa użytkownika',
+            'password': 'Hasło',
+            'password_repeat': 'Powtórz hasło',
+            'first_name': 'Imię',
+            'last_name': 'Nazwisko',
+            'email': 'Adres e-mail',
+        }
+
         widgets = {
             'password': forms.PasswordInput,
         }

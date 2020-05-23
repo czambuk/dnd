@@ -7,10 +7,6 @@ from .forms import UserCreateForm, ContactForm
 from django.contrib.auth.models import User
 from django.contrib.auth.views import LoginView, LogoutView
 from django.views.generic import (CreateView,
-                                  DeleteView,
-                                  FormView,
-                                  ListView,
-                                  UpdateView
                                   )
 
 
@@ -47,7 +43,7 @@ class ContactPage(View):
         return TemplateResponse(
             request,
             "landing_page/contact_page.html",
-            context={"form":form},
+            context={"form": form},
         )
 
     def post(self, request):
@@ -57,6 +53,5 @@ class ContactPage(View):
             sender_email = form.cleaned_data['email']
 
             message = "{0} Wysłał wiadomość:\n\n{1}".format(sender_name, form.cleaned_data['message'])
-            send_mail('Nowa wiadomość', message, sender_email, ['tegruszecki@gmail.com'])
+            send_mail('Nowa wiadomość', message, sender_email, ['gramywdnd@gmail.com'])
             return HttpResponse('Dzięki za kontakt!')
-

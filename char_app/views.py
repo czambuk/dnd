@@ -1,7 +1,6 @@
-# from django.db import models
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.template.response import TemplateResponse
-from django.http import HttpResponse, HttpRequest
+from django.http import HttpResponse, HttpRequest, HttpResponseRedirect
 from django.views import View
 from django.views.generic import ListView, DetailView
 from .models import Character, Classes, Races, Alignments
@@ -73,17 +72,11 @@ class NewCharacterSheet(LoginRequiredMixin, View):
             charisma_mod=int(request.POST.get("Charismamod")),
             # SAVING THROWS
             strength_save_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Strength-save-prof"))),
-            strength_save_mod=request.POST.get("Strength-save"),
             dexterity_save_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Dexterity-save-prof"))),
-            dexterity_save_mod=request.POST.get("Dexterity-save"),
             constitution_save_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Constitution-save-prof"))),
-            constitution_save_mod=request.POST.get("Constitution-save"),
             wisdom_save_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Wisdom-save-prof"))),
-            wisdom_save_mod=request.POST.get("Wisdom-save"),
             intelligence_save_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Intelligence-save-prof"))),
-            intelligence_save_mod=request.POST.get("Intelligence-save"),
             charisma_save_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Charisma-save-prof"))),
-            charisma_save_mod=request.POST.get("Charisma-save"),
             # PROFICIENCIES
             proficiency_bonus=int(request.POST.get("proficiencybonus")),
             acrobatics_prof=bool(CHECKBOX_MAPPING.get(request.POST.get("Acrobatics-prof"))),
@@ -108,18 +101,13 @@ class NewCharacterSheet(LoginRequiredMixin, View):
             # COMBAT AND MOVEMENT
             armor_class=int(request.POST.get("ac")),
             speed=request.POST.get("speed"),
-
-            # TODO rest of parameters
         )
 
         new_char = Character.objects.get(name=request.POST.get("charname"))
         new_char.hero_classes.set(hero_class)
         new_char.save()
 
-        return TemplateResponse(
-            request,
-            "char_app/char_new.html",
-        )
+        return HttpResponseRedirect(f'/view_character/{new_char.id}')
 
 
 class AllHeroesListView(LoginRequiredMixin, ListView):
