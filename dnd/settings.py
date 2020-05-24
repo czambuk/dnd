@@ -120,6 +120,10 @@ STATIC_URL = '/static/'
 # STATICFILES_DIRS = (
 #     os.path.join(BASE_DIR, 'static'),
 # )
+STATIC_ROOT = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
 LOGIN_URL = '/login'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/login'
@@ -136,6 +140,3 @@ if os.environ.get("DEBUG") == 'TRUE':
     DEBUG = True
 elif os.environ.get("DEBUG") == 'FALSE':
     DEBUG = False
-    STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'static'),
-    )
