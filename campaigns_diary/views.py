@@ -1,23 +1,23 @@
+# Django
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import redirect
-# from django.views import View
-from django.contrib.auth.models import User
 
-from .forms import (CampaignForm,
-                    CampaignEntryForm
-                    )
-
-from .models import (Campaign,
-                     CampaignEntry)
-
-from char_app.models import Character
-
+# Views
 from django.views.generic import (CreateView,
                                   DeleteView,
-                                  FormView,
                                   ListView,
-                                  UpdateView
+                                  UpdateView,
                                   )
+# Forms
+from .forms import (CampaignForm,
+                    CampaignEntryForm,
+                    )
+# Models
+from .models import (Campaign,
+                     CampaignEntry,
+                     )
+
+from char_app.models import Character
 
 
 class CampaignCreateView(LoginRequiredMixin, CreateView):

@@ -1,8 +1,11 @@
+# Django
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.template.response import TemplateResponse
-from django.http import HttpResponse, HttpRequest, HttpResponseRedirect
+from django.http import HttpResponseRedirect
+# Views
 from django.views import View
 from django.views.generic import ListView, DetailView
+# Models
 from .models import Character, Classes, Races, Alignments
 
 

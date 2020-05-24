@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71197edc-a188-4544-858b-4baf566afe80" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dnd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dnd.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/campaigns_diary/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/campaigns_diary/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/char_app/static/char_app/character.js" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/static/char_app/character.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/char_app/templates/char_app/char_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/templates/char_app/char_view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/char_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_roller/static/dice_roller/dice_roller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_roller/static/dice_roller/dice_roller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_roller/templates/dice_roller/dice_roller.html" beforeDir="false" afterPath="$PROJECT_DIR$/dice_roller/templates/dice_roller/dice_roller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dnd/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnd/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing_page/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing_page/static/landing_page/main_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/static/landing_page/main_styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing_page/static/landing_page/warrior.png" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/static/landing_page/images/warrior.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing_page/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +25,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="dnd" />
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -34,31 +45,39 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/landing_page/static/landing_page" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dnd/settings.py" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="settings.editor.splitter.proportion" value="0.2413442" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\static\landing_page\images" />
-      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\templates\landing_page" />
-      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\templates" />
-      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\templates\landing_page\registration" />
-      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\static\landing_page" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\static\landing_page" />
       <recent name="C:\Users\tegru\PycharmProjects\dnd\campaigns_diary\templates\campaigns_diary" />
       <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\templates\landing_page" />
       <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page" />
       <recent name="C:\Users\tegru\PycharmProjects\dnd\char_app\templates\char_app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\static\landing_page\images" />
+      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\templates\landing_page" />
+      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\templates" />
+      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\templates\landing_page\registration" />
+      <recent name="C:\Users\tegru\PycharmProjects\dnd\landing_page\static\landing_page" />
     </key>
   </component>
   <component name="RunManager" selected="Python.dice_roll">
@@ -74,6 +93,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dice_roll.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -95,6 +115,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/landing_page/views.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -121,21 +142,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582133770259</updated>
+      <workItem from="1590305395529" duration="8868000" />
+      <workItem from="1590331280844" duration="666000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -153,14 +178,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Servers/0.0.1920.1040@0.0.1920.1040" timestamp="1582469425206" />
-    <state x="414" y="176" width="1092" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583667045528">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="176" width="1092" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583667045528" />
-    <state x="-1201" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589730502593">
+    <state x="-1506" y="176" width="1092" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590307333827">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1506" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590307333827" />
+    <state x="414" y="176" width="1092" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583667045528" />
+    <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590331610743">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
     <state x="-1201" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1589730502593" />
+    <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1590331610743" />
     <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582469487710" />
     <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1585678895361">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -170,9 +197,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583677286558" />
-    <state x="777" y="233" key="FileChooserDialogImpl" timestamp="1584647369495">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1068" y="223" key="EnvironmentVariablesDialog" timestamp="1590305653747">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1068" y="223" key="EnvironmentVariablesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590305653747" />
+    <state x="-1143" y="233" key="FileChooserDialogImpl" timestamp="1590307326191">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1143" y="233" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590307326191" />
     <state x="777" y="233" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584647369495" />
     <state width="1899" height="274" key="GridCell.Tab.0.bottom" timestamp="1585599299793">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -190,10 +222,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585599299793" />
-    <state x="-1434" y="118" width="1022" height="718" key="SettingsEditor" timestamp="1590159340037">
+    <state x="-1434" y="118" width="1022" height="718" key="SettingsEditor" timestamp="1590305749779">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1434" y="118" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590159340037" />
+    <state x="-1434" y="118" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590305749779" />
     <state x="486" y="118" width="1022" height="718" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583665029757" />
     <state x="274" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1590247395243">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -206,10 +238,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-995" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590179601645" />
-    <state x="-7" y="0" width="974" height="1047" key="dock-window-1" timestamp="1590247439871">
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-1" timestamp="1590305750420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="-7" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590247439871" />
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590305750420" />
     <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589096694940" />
     <state x="1913" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588500215742" />
     <state x="853" y="164" key="refactoring.ChangeSignatureDialog" timestamp="1588504329922">

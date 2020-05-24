@@ -3,6 +3,8 @@ from django.core.exceptions import ValidationError
 
 from django.contrib.auth.models import User
 
+from django.contrib.auth.forms import AuthenticationForm, UsernameField
+
 
 class UserCreateForm(forms.ModelForm):
     password_repeat = forms.CharField(max_length=128, widget=forms.PasswordInput)
@@ -41,3 +43,15 @@ class ContactForm(forms.Form):
     name = forms.CharField(max_length=100, label="Imię i nazwisko")
     email = forms.EmailField(label="Adres e-mail")
     message = forms.CharField(widget=forms.Textarea, label="Wiadomość")
+
+
+class CustomAuthForm(AuthenticationForm):
+    username = UsernameField(
+        label="Użytkownik",
+        widget=forms.TextInput(attrs={'autofocus': True})
+    )
+    password = forms.CharField(
+        label="Hasło",
+        strip=False,
+        widget=forms.PasswordInput(attrs={'autocomplete': 'current-password'}),
+    )

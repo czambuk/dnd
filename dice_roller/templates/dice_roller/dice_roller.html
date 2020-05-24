@@ -2,38 +2,38 @@
 {% load static %}
 
 {% block title %}
-Rzuć kośćmi
+    Rzuć kośćmi
 {% endblock title %}
 
 {% block content %}
-<div class="main-form">
-    <!--    WERSJA Z FORMULARZEM POD PYTHONA    -->
+    <div class="main-form">
+        <!--    WERSJA Z FORMULARZEM POD PYTHONA    -->
 
-    <!--    <form action="" method="post">-->
-    <!--        {% csrf_token %}-->
-    <!--        {{ form }}-->
-    <!--        <input type="submit" value="Rzuć!">-->
-    <!--        <div>{{ result }}</div>-->
-    <!--    </form>-->
+        <!--    <form action="" method="post">-->
+        <!--        {% csrf_token %}-->
+        <!--        {{ form }}-->
+        <!--        <input type="submit" value="Rzuć!">-->
+        <!--        <div>{{ result }}</div>-->
+        <!--    </form>-->
 
-    <!--    WERSJA Z JS    -->
-    <!--    <form action="" method="post">-->
-    <!--        {% csrf_token %}-->
-    <!--        {{ form }}-->
-    <!--    </form>-->
-    <p class="dice-paragraph">
-        <textarea style="resize: none" autofocus rows="1" id="id_roll_data">2k12+3</textarea>
-    </p>
-    <p class="dice-paragraph">
-        <button class="main-input-button">Rzuć</button>
-    </p>
-    <h3>Wyniki:</h3>
+        <!--    WERSJA Z JS    -->
+        <!--    <form action="" method="post">-->
+        <!--        {% csrf_token %}-->
+        <!--        {{ form }}-->
+        <!--    </form>-->
+        <p class="dice-paragraph">
+            <textarea style="resize: none" autofocus rows="1" id="id_roll_data">2k12+3</textarea>
+        </p>
+        <p class="dice-paragraph">
+            <button class="main-input-button">Rzuć</button>
+            <h3>Wyniki:</h3>
+        </p>
+
+
     <div class="results">
 
     </div>
-
-
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="{% static 'dice_roller/dice_roller.js' %}"></script>
+   </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'dice_roller/dice_roller.js' %}"></script>
 {% endblock content %}

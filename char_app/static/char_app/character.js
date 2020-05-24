@@ -10,13 +10,11 @@ $(".stat").bind("input", function () {
 
         if (isNaN(mod)) {
             mod = ""
-        } else {
-            if (mod >= 0) {
-                mod = mod
-            }
+        } else if (mod >= 0) {
+            mod = mod
         }
 
-        var scoreName = inputName.slice(0, inputName.indexOf("score"));
+    var scoreName = inputName.slice(0, inputName.indexOf("score"));
         var modName = scoreName + "mod";
 
         $("[id='" + modName + "']").val(mod);
@@ -28,7 +26,7 @@ var $profBonus = $("#proficiencybonus").val();
 $(".save-mod").each(function () {
     var $inputName = $(this).attr('id');
     var $saveProfName = $inputName + '-prof';
-    var $statName = $inputName.slice(0,$inputName.indexOf("-save"));
+    var $statName = $inputName.slice(0, $inputName.indexOf("-save"));
     var $statModName = $statName + 'mod';
     var $profBool = $(this).next();
 
@@ -52,7 +50,7 @@ var skillsDict = {
 $(".skill-mod").each(function () {
     var $inputName = $(this).attr('id');
     var $saveProfName = $inputName + '-prof';
-    var $statAbbr = $(this).prev().text().slice(-4,-1);
+    var $statAbbr = $(this).prev().text().slice(-4, -1);
     var $statName = skillsDict[$statAbbr];
     var $statModName = $statName + 'mod';
     var $profBool = $(this).next();
@@ -89,10 +87,11 @@ $("[id='level']").bind("input", function () {
 $("[id='totalhd']").bind("input", function () {
     $("[id='remaininghd']").val($(this).val());
 });
+
 function totalhd_clicked() {
     $("[name='remaininghd']").val($("[name='totalhd']").val());
 }
 
-$('input').attr('autocomplete','off');
+$('input').attr('autocomplete', 'off');
 
 

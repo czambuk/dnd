@@ -1,13 +1,16 @@
+# Django
 from django.template.response import TemplateResponse
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.shortcuts import redirect
-from django.views import View
-from .forms import UserCreateForm, ContactForm
+# Forms
+from .forms import UserCreateForm, ContactForm, CustomAuthForm
+# User
 from django.contrib.auth.models import User
 from django.contrib.auth.views import LoginView, LogoutView
-from django.views.generic import (CreateView,
-                                  )
+# Views
+from django.views import View
+from django.views.generic import CreateView
 
 
 class HomePage(View):
@@ -20,6 +23,7 @@ class HomePage(View):
 
 class LoginPageView(LoginView):
     redirect_authenticated_user = True
+    authentication_form = CustomAuthForm
 
 
 class LogoutPageView(LogoutView):
