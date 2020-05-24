@@ -28,9 +28,9 @@ elif os.environ.get('DEBUG') == 'FALSE':
     DEBUG = False
 
 # Powtórka dla ułatwienia zmian - do wywalenia
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
