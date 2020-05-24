@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '!-$t1j+8vkz_7^b*a8a(vrt8^ghcq5-s@c#%&xk(@bxkjik95c'
 
-ALLOWED_HOSTS = ['dnd.herokuapp.com']
+ALLOWED_HOSTS = ['gramy-w-dnd.herokuapp.com']
 
 # Application definition
 
