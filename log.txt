@@ -1,0 +1,100 @@
+2020-05-24T17:21:48.839821+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+2020-05-24T17:21:48.839822+00:00 app[web.1]: response = get_response(request)
+2020-05-24T17:21:48.839822+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/utils/deprecation.py", line 94, in __call__
+2020-05-24T17:21:48.839822+00:00 app[web.1]: response = response or self.get_response(request)
+2020-05-24T17:21:48.839823+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/core/handlers/exception.py", line 36, in inner
+2020-05-24T17:21:48.839823+00:00 app[web.1]: response = response_for_exception(request, exc)
+2020-05-24T17:21:48.839824+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+2020-05-24T17:21:48.839824+00:00 app[web.1]: response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+2020-05-24T17:21:48.839825+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+2020-05-24T17:21:48.839825+00:00 app[web.1]: response = get_response(request)
+2020-05-24T17:21:48.839825+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/utils/deprecation.py", line 94, in __call__
+2020-05-24T17:21:48.839826+00:00 app[web.1]: response = response or self.get_response(request)
+2020-05-24T17:21:48.839826+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/core/handlers/exception.py", line 36, in inner
+2020-05-24T17:21:48.839826+00:00 app[web.1]: response = response_for_exception(request, exc)
+2020-05-24T17:21:48.839827+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+2020-05-24T17:21:48.839827+00:00 app[web.1]: response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+2020-05-24T17:21:48.839828+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+2020-05-24T17:21:48.839828+00:00 app[web.1]: response = get_response(request)
+2020-05-24T17:21:48.839828+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/utils/deprecation.py", line 94, in __call__
+2020-05-24T17:21:48.839829+00:00 app[web.1]: response = response or self.get_response(request)
+2020-05-24T17:21:48.839829+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/core/handlers/exception.py", line 36, in inner
+2020-05-24T17:21:48.839830+00:00 app[web.1]: response = response_for_exception(request, exc)
+2020-05-24T17:21:48.839830+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+2020-05-24T17:21:48.839830+00:00 app[web.1]: response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+2020-05-24T17:21:48.839830+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+2020-05-24T17:21:48.839831+00:00 app[web.1]: response = get_response(request)
+2020-05-24T17:21:48.839831+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+2020-05-24T17:21:48.839831+00:00 app[web.1]: response = self.process_exception_by_middleware(e, request)
+2020-05-24T17:21:48.839831+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+2020-05-24T17:21:48.839832+00:00 app[web.1]: response = response.render()
+2020-05-24T17:21:48.839832+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+2020-05-24T17:21:48.839832+00:00 app[web.1]: self.content = self.rendered_content
+2020-05-24T17:21:48.839833+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+2020-05-24T17:21:48.839833+00:00 app[web.1]: return template.render(context, self._request)
+2020-05-24T17:21:48.839833+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+2020-05-24T17:21:48.839833+00:00 app[web.1]: return self.template.render(context)
+2020-05-24T17:21:48.839834+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+2020-05-24T17:21:48.839834+00:00 app[web.1]: return self._render(context)
+2020-05-24T17:21:48.839834+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+2020-05-24T17:21:48.839834+00:00 app[web.1]: return self.nodelist.render(context)
+2020-05-24T17:21:48.839835+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+2020-05-24T17:21:48.839835+00:00 app[web.1]: bit = node.render_annotated(context)
+2020-05-24T17:21:48.839835+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+2020-05-24T17:21:48.839840+00:00 app[web.1]: return self.render(context)
+2020-05-24T17:21:48.839840+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/template/loader_tags.py", line 53, in render
+2020-05-24T17:21:48.839891+00:00 app[web.1]: result = self.nodelist.render(context)
+2020-05-24T17:21:48.839892+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+2020-05-24T17:21:48.839893+00:00 app[web.1]: bit = node.render_annotated(context)
+2020-05-24T17:21:48.839893+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+2020-05-24T17:21:48.839893+00:00 app[web.1]: return self.render(context)
+2020-05-24T17:21:48.839893+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/templatetags/static.py", line 106, in render
+2020-05-24T17:21:48.839894+00:00 app[web.1]: url = self.url(context)
+2020-05-24T17:21:48.839894+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/templatetags/static.py", line 103, in url
+2020-05-24T17:21:48.839894+00:00 app[web.1]: return self.handle_simple(path)
+2020-05-24T17:21:48.839895+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/templatetags/static.py", line 118, in handle_simple
+2020-05-24T17:21:48.839895+00:00 app[web.1]: return staticfiles_storage.url(path)
+2020-05-24T17:21:48.839895+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/contrib/staticfiles/storage.py", line 153, in url
+2020-05-24T17:21:48.839896+00:00 app[web.1]: return self._url(self.stored_name, name, force)
+2020-05-24T17:21:48.839896+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/contrib/staticfiles/storage.py", line 132, in _url
+2020-05-24T17:21:48.839896+00:00 app[web.1]: hashed_name = hashed_name_func(*args)
+2020-05-24T17:21:48.839896+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/django/contrib/staticfiles/storage.py", line 423, in stored_name
+2020-05-24T17:21:48.839897+00:00 app[web.1]: raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+2020-05-24T17:21:48.839897+00:00 app[web.1]: ValueError: Missing staticfiles manifest entry for '/landing_page/images/hero-icon.png'
+2020-05-24T17:21:48.840006+00:00 app[web.1]: 10.31.64.150 - - [24/May/2020:17:21:48 +0000] "GET / HTTP/1.1" 500 0 "-" "-"
+2020-05-24T17:21:48.845531+00:00 heroku[router]: at=info method=GET path="/" host=gramy-w-dnd.herokuapp.com request_id=3de895c5-9e1e-4008-9b5a-5349927bb94a fwd="62.21.49.76" dyno=web.1 connect=0ms service=60ms status=500 bytes=244 protocol=https
+2020-05-24T17:23:22.047563+00:00 app[api]: Set DEBUG config vars by user tegruszecki@gmail.com
+2020-05-24T17:23:22.047563+00:00 app[api]: Release v19 created by user tegruszecki@gmail.com
+2020-05-24T17:23:22.494756+00:00 heroku[web.1]: Restarting
+2020-05-24T17:23:22.509486+00:00 heroku[web.1]: State changed from up to starting
+2020-05-24T17:23:23.269085+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2020-05-24T17:23:23.296264+00:00 app[web.1]: [2020-05-24 17:23:23 +0000] [10] [INFO] Worker exiting (pid: 10)
+2020-05-24T17:23:23.296272+00:00 app[web.1]: [2020-05-24 17:23:23 +0000] [11] [INFO] Worker exiting (pid: 11)
+2020-05-24T17:23:23.296380+00:00 app[web.1]: [2020-05-24 17:23:23 +0000] [4] [INFO] Handling signal: term
+2020-05-24T17:23:23.396924+00:00 app[web.1]: [2020-05-24 17:23:23 +0000] [4] [INFO] Shutting down: Master
+2020-05-24T17:23:23.471516+00:00 heroku[web.1]: Process exited with status 0
+2020-05-24T17:23:27.241189+00:00 heroku[web.1]: Starting process with command `gunicorn dnd.wsgi --log-file -`
+2020-05-24T17:23:29.738753+00:00 app[web.1]: [2020-05-24 17:23:29 +0000] [4] [INFO] Starting gunicorn 20.0.4
+2020-05-24T17:23:29.739396+00:00 app[web.1]: [2020-05-24 17:23:29 +0000] [4] [INFO] Listening at: http://0.0.0.0:17967 (4)
+2020-05-24T17:23:29.739517+00:00 app[web.1]: [2020-05-24 17:23:29 +0000] [4] [INFO] Using worker: sync
+2020-05-24T17:23:29.744650+00:00 app[web.1]: [2020-05-24 17:23:29 +0000] [10] [INFO] Booting worker with pid: 10
+2020-05-24T17:23:29.819555+00:00 app[web.1]: [2020-05-24 17:23:29 +0000] [11] [INFO] Booting worker with pid: 11
+2020-05-24T17:23:30.188766+00:00 heroku[web.1]: State changed from starting to up
+2020-05-24T17:23:31.597098+00:00 app[web.1]: 10.109.140.73 - - [24/May/2020:17:23:31 +0000] "GET / HTTP/1.1" 200 2046 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+2020-05-24T17:23:31.597547+00:00 heroku[router]: at=info method=GET path="/" host=gramy-w-dnd.herokuapp.com request_id=7f4abc8a-c696-45f2-9da9-9fbbcfc34f16 fwd="62.21.49.76" dyno=web.1 connect=1ms service=84ms status=200 bytes=2278 protocol=https
+2020-05-24T17:23:31.732773+00:00 app[web.1]: 10.109.140.73 - - [24/May/2020:17:23:31 +0000] "GET /static/landing_page/main_styles.css HTTP/1.1" 200 0 "https://gramy-w-dnd.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+2020-05-24T17:23:31.738982+00:00 heroku[router]: at=info method=GET path="/static/landing_page/main_styles.css" host=gramy-w-dnd.herokuapp.com request_id=c91a391a-a7f3-408e-b2f1-23d340110f1d fwd="62.21.49.76" dyno=web.1 connect=1ms service=10ms status=200 bytes=3952 protocol=https
+2020-05-24T17:23:31.762554+00:00 app[web.1]: 10.109.166.130 - - [24/May/2020:17:23:31 +0000] "GET /static/landing_page/main_site.js HTTP/1.1" 200 0 "https://gramy-w-dnd.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+2020-05-24T17:23:31.763377+00:00 heroku[router]: at=info method=GET path="/static/landing_page/main_site.js" host=gramy-w-dnd.herokuapp.com request_id=109c69ba-9923-4ae7-9540-3785e3dbd26b fwd="62.21.49.76" dyno=web.1 connect=0ms service=2ms status=200 bytes=975 protocol=https
+2020-05-24T17:23:31.855553+00:00 app[web.1]: 10.109.140.73 - - [24/May/2020:17:23:31 +0000] "GET /static/landing_page/images/hero-icon.png HTTP/1.1" 200 0 "https://gramy-w-dnd.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+2020-05-24T17:23:31.857653+00:00 heroku[router]: at=info method=GET path="/static/landing_page/images/hero-icon.png" host=gramy-w-dnd.herokuapp.com request_id=432402c8-d729-4ffe-8fdd-b9f7326d1ab6 fwd="62.21.49.76" dyno=web.1 connect=1ms service=4ms status=200 bytes=36703 protocol=https
+2020-05-24T17:23:31.880932+00:00 app[web.1]: 10.109.166.130 - - [24/May/2020:17:23:31 +0000] "GET /static/landing_page/images/campaign-icon.png HTTP/1.1" 200 0 "https://gramy-w-dnd.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+2020-05-24T17:23:31.881280+00:00 heroku[router]: at=info method=GET path="/static/landing_page/images/campaign-icon.png" host=gramy-w-dnd.herokuapp.com request_id=a102e1f4-a1ba-4965-86a6-710f60068489 fwd="62.21.49.76" dyno=web.1 connect=0ms service=4ms status=200 bytes=35783 protocol=https
+2020-05-24T17:23:31.972121+00:00 app[web.1]: 10.5.241.183 - - [24/May/2020:17:23:31 +0000] "GET /static/landing_page/images/characters-icon.png HTTP/1.1" 200 0 "https://gramy-w-dnd.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+2020-05-24T17:23:31.972981+00:00 heroku[router]: at=info method=GET path="/static/landing_page/images/characters-icon.png" host=gramy-w-dnd.herokuapp.com request_id=ed37fb45-ded3-4391-9c12-11bfeec3d449 fwd="62.21.49.76" dyno=web.1 connect=0ms service=3ms status=200 bytes=23576 protocol=https
+2020-05-24T17:23:31.985335+00:00 app[web.1]: 10.43.184.146 - - [24/May/2020:17:23:31 +0000] "GET /static/landing_page/images/dice-icon.png HTTP/1.1" 200 0 "https://gramy-w-dnd.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+2020-05-24T17:23:31.986133+00:00 app[web.1]: 10.63.208.77 - - [24/May/2020:17:23:31 +0000] "GET /static/landing_page/images/warrior.png HTTP/1.1" 200 0 "https://gramy-w-dnd.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+2020-05-24T17:23:31.986329+00:00 heroku[router]: at=info method=GET path="/static/landing_page/images/warrior.png" host=gramy-w-dnd.herokuapp.com request_id=a6017f93-f107-40b8-bfba-42d1565133a1 fwd="62.21.49.76" dyno=web.1 connect=1ms service=3ms status=200 bytes=4248 protocol=https
+2020-05-24T17:23:31.987549+00:00 app[web.1]: 10.79.206.66 - - [24/May/2020:17:23:31 +0000] "GET /static/landing_page/images/background.png HTTP/1.1" 200 0 "https://gramy-w-dnd.herokuapp.com/static/landing_page/main_styles.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+2020-05-24T17:23:31.988270+00:00 heroku[router]: at=info method=GET path="/static/landing_page/images/background.png" host=gramy-w-dnd.herokuapp.com request_id=954c1a97-b71d-4a09-b782-8248415a687e fwd="62.21.49.76" dyno=web.1 connect=1ms service=5ms status=200 bytes=14528 protocol=https
+2020-05-24T17:23:31.992412+00:00 heroku[router]: at=info method=GET path="/static/landing_page/images/dice-icon.png" host=gramy-w-dnd.herokuapp.com request_id=2dcb1ec8-eb80-4824-919e-0bc5a9ea23d8 fwd="62.21.49.76" dyno=web.1 connect=0ms service=9ms status=200 bytes=34623 protocol=https
