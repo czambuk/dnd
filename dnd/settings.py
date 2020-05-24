@@ -21,7 +21,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '!-$t1j+8vkz_7^b*a8a(vrt8^ghcq5-s@c#%&xk(@bxkjik95c'
 
-ALLOWED_HOSTS = ['gramy-w-dnd.herokuapp.com', '.herokuapp.com']
+# SECURITY WARNING: don't run with debug turned on in production!
+if os.environ.get('DEBUG') == 'TRUE':
+    DEBUG = True
+elif os.environ.get('DEBUG') == 'FALSE':
+    DEBUG = False
+
+# Powtórka dla ułatwienia zmian - do wywalenia
+DEBUG = False
+
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -43,6 +52,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -116,12 +126,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
-
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR, 'static'),
-# )
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 LOGIN_URL = '/login'
 LOGIN_REDIRECT_URL = '/'
@@ -129,15 +135,9 @@ LOGOUT_REDIRECT_URL = '/login'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+DEBUG_PROPAGATE_EXCEPTIONS = True
+
 # Heroku settings
 import django_heroku
 
 django_heroku.settings(locals())
-
-# SECURITY WARNING: don't run with debug turned on in production!
-if os.environ.get('DEBUG') == 'TRUE':
-    DEBUG = True
-elif os.environ.get('DEBUG') == 'FALSE':
-    DEBUG = False
-
-DEBUG_PROPAGATE_EXCEPTIONS = True

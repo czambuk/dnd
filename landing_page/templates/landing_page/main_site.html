@@ -17,7 +17,7 @@
 <body>
 <div class="navbar">
     <ul>
-        <li><a href="">Strona główna</a></li>
+        <li><a href="/">Strona główna</a></li>
         <li>
             {% if request.user.is_authenticated %}
             Hej, {{ request.user.username }}
@@ -33,7 +33,7 @@
 <div class="content-links">
     <div class="mainMenuItem">
         <a href="/new_character" title="NOWY BOHATER">
-            <img src="{% static '/landing_page/images/hero-icon.png' %}">
+            <img alt="img" src="{% static 'landing_page/images/hero-icon.png' %}">
         </a>
         <div class="mainMenuDesc hidden">
             NOWY BOHATER
@@ -41,7 +41,8 @@
     </div>
     <div class="mainMenuItem">
         <a href="/view_campaigns" title="WYŚWIETL KAMPANIE">
-            <img src="{% static '/landing_page/images/campaign-icon.png' %}">
+            <img alt="img2" src="{% static '/landing_page/images/campaign-icon.png' %}">
+
         </a>
         <div class="mainMenuDesc hidden">
             WYŚWIETL KAMPANIE
@@ -50,7 +51,7 @@
 
     <div class="mainMenuItem">
         <a href="/view_characters" title="WYŚWIETL BOHATERÓW">
-            <img src="{% static '/landing_page/images/characters-icon.png' %}">
+            <img alt="img" src="{% static '/landing_page/images/characters-icon.png' %}"/>
         </a>
         <div class="mainMenuDesc hidden">
             WYŚWIETL BOHATERÓW
