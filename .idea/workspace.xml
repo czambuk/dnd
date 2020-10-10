@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71197edc-a188-4544-858b-4baf566afe80" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.86e56997883e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.86e56997883e.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.f12445de8e17.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.f12445de8e17.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/landing_page/main_styles.2981ca49dab5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/landing_page/main_styles.2981ca49dab5.css.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dnd/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnd/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_roller/static/dice_roller/dice_roller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_roller/static/dice_roller/dice_roller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_roller/templates/dice_roller/dice_roller.html" beforeDir="false" afterPath="$PROJECT_DIR$/dice_roller/templates/dice_roller/dice_roller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing_page/static/landing_page/main_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/static/landing_page/main_styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.js.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/landing_page/main_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/landing_page/main_styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/landing_page/main_styles.css.gz" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/landing_page/main_styles.css.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/staticfiles.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="66c968af-6c38-4fe4-bf9b-daa3285f75eb" />
   <component name="ProjectId" id="1Y2HSm8YC9cHGrkYkhvY3WxBE8I" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -42,14 +54,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dnd/settings.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2413442" />
   </component>
   <component name="RecentsManager">
@@ -120,6 +132,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -134,12 +147,18 @@
       <workItem from="1590331280844" duration="929000" />
       <workItem from="1590332291240" duration="1375000" />
       <workItem from="1590333755938" duration="9431000" />
-      <workItem from="1590353413405" duration="688000" />
+      <workItem from="1590353413405" duration="1420000" />
+      <workItem from="1597338391224" duration="449000" />
+      <workItem from="1599676740183" duration="31000" />
+      <workItem from="1599676816039" duration="203000" />
+      <workItem from="1599677101414" duration="35000" />
+      <workItem from="1601567827506" duration="3481000" />
+      <workItem from="1602322276814" duration="5644000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -157,94 +176,21 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="72" y="182" key="#Menus_and_Toolbars" timestamp="1582469876446">
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1599676757050">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="72" y="182" key="#Menus_and_Toolbars/0.0.1920.1040@0.0.1920.1040" timestamp="1582469876446" />
-    <state x="552" y="179" key="#Notifications" timestamp="1582445595415">
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.0.1050.1640@0.0.1920.1040" timestamp="1599676757050" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1601571764836">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="179" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1582445595415" />
-    <state x="552" y="178" key="#Servers" timestamp="1582469425206">
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1050.1640@0.0.1920.1040" timestamp="1601571764836" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602323931724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Servers/0.0.1920.1040@0.0.1920.1040" timestamp="1582469425206" />
-    <state x="414" y="176" width="1092" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590353429648">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1050.1640@0.0.1920.1040" timestamp="1602323931724" />
+    <state x="514" y="95" width="974" height="1047" key="dock-window-1" timestamp="1597338713266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1506" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590307333827" />
-    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1590353429648" />
-    <state x="414" y="176" width="1092" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583667045528" />
-    <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590331610743">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1201" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1589730502593" />
-    <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1590331610743" />
-    <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582469487710" />
-    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1585678895361">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585678895361" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1583677286558">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583677286558" />
-    <state x="-1068" y="223" key="EnvironmentVariablesDialog" timestamp="1590305653747">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1068" y="223" key="EnvironmentVariablesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590305653747" />
-    <state x="-1143" y="233" key="FileChooserDialogImpl" timestamp="1590307326191">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1143" y="233" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590307326191" />
-    <state x="777" y="233" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584647369495" />
-    <state width="1899" height="274" key="GridCell.Tab.0.bottom" timestamp="1585599299793">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585599299793" />
-    <state width="1899" height="274" key="GridCell.Tab.0.center" timestamp="1585599299793">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585599299793" />
-    <state width="1899" height="274" key="GridCell.Tab.0.left" timestamp="1585599299793">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585599299793" />
-    <state width="1899" height="274" key="GridCell.Tab.0.right" timestamp="1585599299793">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585599299793" />
-    <state x="-1434" y="118" width="1022" height="718" key="SettingsEditor" timestamp="1590305749779">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1434" y="118" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590305749779" />
-    <state x="486" y="118" width="1022" height="718" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583665029757" />
-    <state x="274" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1590247395243">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="274" y="209" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590247395243" />
-    <state x="274" y="209" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589096669298" />
-    <state x="274" y="209" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588500265392" />
-    <state x="274" y="209" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586769976669" />
-    <state x="-995" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590179601645">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-995" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590179601645" />
-    <state x="-7" y="0" width="974" height="1047" key="dock-window-1" timestamp="1590305750420">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-7" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590305750420" />
-    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589096694940" />
-    <state x="1913" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588500215742" />
-    <state x="853" y="164" key="refactoring.ChangeSignatureDialog" timestamp="1588504329922">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="853" y="164" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588504329922" />
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589733909440">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1589733909440" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589097687959" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586621594773" />
+    <state x="514" y="95" width="974" height="1047" key="dock-window-1/0.0.1920.1040/1920.0.1050.1640@0.0.1920.1040" timestamp="1597338713266" />
   </component>
 </project>

@@ -65,9 +65,9 @@ $(document).ready(function () {
         console.log("$throwNumber = " + $throwNumber);
         console.log("$modCode = " + $modCode);
         console.log("$modValue = " + $modValue);
-        var singleResults;
+
         if ($allowedDice.includes(parseInt($dieSize)) === true) {
-            singleResults = [];
+            var singleResults = [];
             for (i = 0; i < $throwNumber; i++) {
                 var randomNumber = getRandomNumber(1, $dieSize);
                 singleResults.push(randomNumber);
@@ -77,9 +77,7 @@ $(document).ready(function () {
             var singleResultsString = singleResults.toString();
 
         } else {
-            singleResultsString = "0_______0"
             $result = "Błędna kostka!"
-
         }
 
         $('.results').prepend('<p>Losowanie: ' + $throwData + ', Wylosowano: ' + '[' + singleResultsString + '] ' +

@@ -77,9 +77,9 @@ $(document).ready(function () {
             var singleResultsString = singleResults.toString();
 
         } else {
-            singleResultsString = "0_______0"
             $result = "Błędna kostka!"
-
+            singleResults = "[XXX]"
+            $modValue = 0
         }
 
         $('.results').prepend('<p>Losowanie: ' + $throwData + ', Wylosowano: ' + '[' + singleResultsString + '] ' +

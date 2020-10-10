@@ -3,7 +3,7 @@
 }
 
 body {
-    background: var(--main-bg-color) url("images/background.png");
+    background: var(--main-bg-color) url("images/background.40f17bdbe011.png");
     background-repeat: no-repeat;
     background-size: auto;
     color: white;
@@ -230,12 +230,12 @@ textarea {
 
 .email {
     border: none;
+    color: black;
     text-align: right;
-    text-decoration-color: black;
     display: inline-block;
     text-decoration: none;
     font-size: 0.5rem;
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     right: 10px;
 }

@@ -21,19 +21,20 @@
         <!--        {% csrf_token %}-->
         <!--        {{ form }}-->
         <!--    </form>-->
-        <p class="dice-paragraph">
+        <div class="dice-paragraph">
             <textarea style="resize: none" autofocus rows="1" id="id_roll_data">2k12+3</textarea>
-        </p>
-        <p class="dice-paragraph">
-            <button class="main-input-button">Rzuć</button>
+        </div>
+        <div class="dice-paragraph">
+            <button class="roll-button">Rzuć</button>
+        </div>
+        <div class="dice-paragraph">
             <h3>Wyniki:</h3>
-        </p>
-
-
-    <div class="results">
-
+        </div>
+        <div class="results">
+            {#wyniki wklejane z JS#}
+        </div>
     </div>
-   </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="{% static 'dice_roller/dice_roller.js' %}"></script>
 {% endblock content %}

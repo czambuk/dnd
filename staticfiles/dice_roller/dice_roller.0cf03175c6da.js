@@ -25,7 +25,7 @@ $(document).ready(function () {
                 $dieCode = 0
             }
 
-            if ($dieCode != 0) {
+            if ($dieCode.match(/\d+/) != null) {
                 $dieSize = $dieCode.match(/\d+/)[0]
             } else {
                 $dieSize = 0
@@ -37,7 +37,7 @@ $(document).ready(function () {
                 $throwNumberCode = 0
             }
 
-            if ($throwNumberCode != 0) {
+            if ($throwNumberCode.match(/\d+/) != null) {
                 $throwNumber = $throwNumberCode.match(/\d+/)[0]
             } else {
                 $throwNumber = 0
@@ -49,8 +49,8 @@ $(document).ready(function () {
                 $modCode = 0
             }
 
-            if ($modCode != 0) {
-                $modValue = $modCode.match(/\d+/)[0]
+            if ($throwNumberCode.match(/\d+/) != null) {
+                $modValue = $throwNumberCode.match(/\d+/)[0]
             } else {
                 $modValue = 0
             }
@@ -65,9 +65,9 @@ $(document).ready(function () {
         console.log("$throwNumber = " + $throwNumber);
         console.log("$modCode = " + $modCode);
         console.log("$modValue = " + $modValue);
-        var singleResults;
+
         if ($allowedDice.includes(parseInt($dieSize)) === true) {
-            singleResults = [];
+            var singleResults = [];
             for (i = 0; i < $throwNumber; i++) {
                 var randomNumber = getRandomNumber(1, $dieSize);
                 singleResults.push(randomNumber);
@@ -77,9 +77,7 @@ $(document).ready(function () {
             var singleResultsString = singleResults.toString();
 
         } else {
-            singleResultsString = "0_______0"
             $result = "Błędna kostka!"
-
         }
 
         $('.results').prepend('<p>Losowanie: ' + $throwData + ', Wylosowano: ' + '[' + singleResultsString + '] ' +

@@ -78,6 +78,7 @@ $(document).ready(function () {
 
         } else {
             singleResultsString = "0_______0"
+            $modValue = 0
             $result = "Błędna kostka!"
 
         }

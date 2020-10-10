@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <title>
         {% block title %}
-        {{ page_title|default:"Pomocnik D&D" }}
+            {{ page_title|default:"Pomocnik D&D" }}
         {% endblock title %}
     </title>
 </head>
@@ -20,56 +20,60 @@
         <li><a href="/">Strona główna</a></li>
         <li>
             {% if request.user.is_authenticated %}
-            Hej, {{ request.user.username }}
-            <a href="/logout"> - Wyloguj</a>
+                Hej, {{ request.user.username }}
+                <a href="/logout"> - Wyloguj</a>
             {% else %}
-            <a href="/login">Zaloguj się</a>
+                <a href="/login">Zaloguj się</a>
             {% endif %}
         </li>
         <li><a href="/contact">Kontakt</a></li>
     </ul>
 </div>
 {% block content %}
-<div class="content-links">
-    <div class="mainMenuItem">
-        <a href="/new_character" title="NOWY BOHATER">
-            <img alt="img" src="{% static 'landing_page/images/hero-icon.png' %}">
-        </a>
-        <div class="mainMenuDesc hidden">
-            NOWY BOHATER
+    <div class="content-links">
+        <div class="mainMenuItem">
+            <a href="/new_character" title="NOWY BOHATER">
+                <img alt="img" src="{% static 'landing_page/images/hero-icon.png' %}">
+            </a>
+            <div class="mainMenuDesc hidden">
+                NOWY BOHATER
+            </div>
         </div>
-    </div>
-    <div class="mainMenuItem">
-        <a href="/view_campaigns" title="WYŚWIETL KAMPANIE">
-            <img src="{% static 'landing_page/images/campaign-icon.png' %}">
+        <div class="mainMenuItem">
+            <a href="/view_campaigns" title="WYŚWIETL KAMPANIE">
+                <img src="{% static 'landing_page/images/campaign-icon.png' %}">
 
-        </a>
-        <div class="mainMenuDesc hidden">
-            WYŚWIETL KAMPANIE
+            </a>
+            <div class="mainMenuDesc hidden">
+                WYŚWIETL KAMPANIE
+            </div>
+        </div>
+
+        <div class="mainMenuItem">
+            <a href="/view_characters" title="WYŚWIETL BOHATERÓW">
+                <img src="{% static 'landing_page/images/characters-icon.png' %}"/>
+            </a>
+            <div class="mainMenuDesc hidden">
+                WYŚWIETL BOHATERÓW
+            </div>
+        </div>
+        <div class="mainMenuItem">
+            <a href="/roll_dice" title="RZUĆ KOŚĆMI!">
+                <img src="{% static 'landing_page/images/dice-icon.png' %}">
+            </a>
+            <div class="mainMenuDesc hidden">
+                RZUĆ KOŚĆMI!
+            </div>
         </div>
     </div>
 
-    <div class="mainMenuItem">
-        <a href="/view_characters" title="WYŚWIETL BOHATERÓW">
-            <img src="{% static 'landing_page/images/characters-icon.png' %}"/>
-        </a>
-        <div class="mainMenuDesc hidden">
-            WYŚWIETL BOHATERÓW
-        </div>
+    <div class="lower-image">
+        <img src="{% static 'landing_page/images/warrior.png' %}">
     </div>
-    <div class="mainMenuItem">
-        <a href="/roll_dice" title="RZUĆ KOŚĆMI!">
-            <img src="{% static 'landing_page/images/dice-icon.png' %}">
-        </a>
-        <div class="mainMenuDesc hidden">
-            RZUĆ KOŚĆMI!
-        </div>
-    </div>
-</div>
 
-<div class="lower-image">
-    <img src="{% static 'landing_page/images/warrior.png' %}">
-</div>
+    <div class="email">
+        <a href="mailto:wgrynieumiem@gmail.com">2020@wgrynieumiem@gmail.com</a>
+    </div>
 {% endblock content %}
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
