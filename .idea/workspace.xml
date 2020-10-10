@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71197edc-a188-4544-858b-4baf566afe80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/quests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quests/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quests/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quests/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quests/migrations/0002_auto_20201010_1620.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quests/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quests/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quests/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quests/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quests/static/quests/quest_styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quests/templates/quests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/quests/quest_styles.b5553f71253c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/quests/quest_styles.b5553f71253c.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/quests/quest_styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/quests/quest_styles.css.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/char_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dnd/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnd/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dnd/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnd/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quests/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/quests/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/staticfiles.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -52,6 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -151,7 +150,8 @@
       <workItem from="1599677101414" duration="35000" />
       <workItem from="1601567827506" duration="3481000" />
       <workItem from="1602322276814" duration="6399000" />
-      <workItem from="1602337642907" duration="2314000" />
+      <workItem from="1602337642907" duration="2501000" />
+      <workItem from="1602353644762" duration="3121000" />
     </task>
     <servers />
   </component>

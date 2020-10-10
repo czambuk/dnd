@@ -1,0 +1,22 @@
+{% extends 'landing_page/main_site.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'quests/quest_styles.css' %}">
+{% endblock styles %}
+
+{% block title %}
+    Zadania
+{% endblock title %}
+
+{% block content %}
+    <div class="main-quests-container">
+        {% for quest in object_list %}
+            <div class="single-quest">
+                {{ quest.name }}
+            </div>
+        {% endfor %}
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'dice_roller/dice_roller.js' %}"></script>
+{% endblock content %}
