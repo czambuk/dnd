@@ -18,14 +18,17 @@
 <div class="navbar">
     <ul>
         <li><a href="/">Strona główna</a></li>
-        <li>
-            {% if request.user.is_authenticated %}
+        {% if request.user.is_authenticated %}
+            <li><a href="/view_campaigns">Kampanie</a></li>
+            <li><a href="/view_characters">Bohaterowie</a></li>
+            <li><a href="/view_quests">Zadania</a></li> {# TODO #}
+            <li>
                 Hej, {{ request.user.username }}
                 <a href="/logout"> - Wyloguj</a>
-            {% else %}
-                <a href="/login">Zaloguj się</a>
-            {% endif %}
-        </li>
+            </li>
+        {% else %}
+            <li><a href="/login">Zaloguj się</a></li>
+        {% endif %}
         <li><a href="/contact">Kontakt</a></li>
     </ul>
 </div>

@@ -118,6 +118,10 @@ class AllHeroesListView(LoginRequiredMixin, ListView):
     ordering = "name"
     template_name = "char_app/char_list.html"
 
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        return queryset.filter(player=self.request.user)
+
 
 class HeroDetailView(LoginRequiredMixin, DetailView):
     model = Character

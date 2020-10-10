@@ -2,22 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71197edc-a188-4544-858b-4baf566afe80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.86e56997883e.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.86e56997883e.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.f12445de8e17.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.f12445de8e17.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/landing_page/main_styles.2981ca49dab5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/landing_page/main_styles.2981ca49dab5.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quests/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quests/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quests/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quests/migrations/0002_auto_20201010_1620.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quests/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quests/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quests/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quests/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice_roller/static/dice_roller/dice_roller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_roller/static/dice_roller/dice_roller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice_roller/templates/dice_roller/dice_roller.html" beforeDir="false" afterPath="$PROJECT_DIR$/dice_roller/templates/dice_roller/dice_roller.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing_page/static/landing_page/main_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/static/landing_page/main_styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/char_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/char_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dnd/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnd/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/templates/landing_page/main_site.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/dice_roller/dice_roller.js.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/landing_page/main_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/landing_page/main_styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/landing_page/main_styles.css.gz" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/landing_page/main_styles.css.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/staticfiles.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +150,8 @@
       <workItem from="1599676816039" duration="203000" />
       <workItem from="1599677101414" duration="35000" />
       <workItem from="1601567827506" duration="3481000" />
-      <workItem from="1602322276814" duration="5644000" />
+      <workItem from="1602322276814" duration="6399000" />
+      <workItem from="1602337642907" duration="2314000" />
     </task>
     <servers />
   </component>
@@ -184,6 +182,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1050.1640@0.0.1920.1040" timestamp="1601571764836" />
+    <state x="707" y="293" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1602338560706">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="707" y="293" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/1920.0.1050.1640@0.0.1920.1040" timestamp="1602338560706" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602323931724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
