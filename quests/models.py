@@ -13,3 +13,9 @@ class Quest(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class QuestStage(models.Model):
+    description = models.TextField()
+    date_added = models.DateField(auto_now_add=True)
+    which_quest = models.ForeignKey(Quest, on_delete=models.CASCADE)

@@ -29,7 +29,9 @@ from campaigns_diary.views import (CampaignCreateView,
                                    CampaignDeleteView,
                                    CampaignUpdateView,
                                    )
-from quests.views import AllQuestsView
+from quests.views import (AllQuestsView,
+                          QuestCreateView,
+                          )
 
 urlpatterns = [
                   path('admin/', admin.site.urls),
@@ -55,5 +57,7 @@ urlpatterns = [
                   path('delete_campaign/<int:campaign_id>', CampaignDeleteView.as_view()),
                   path('update_campaign/<int:campaign_id>', CampaignUpdateView.as_view()),
                   path('view_quests', AllQuestsView.as_view()),
+                  path('create_quests', QuestCreateView.as_view()),
+
               ] + static(settings.STATIC_URL,
                          document_root=settings.STATIC_ROOT)

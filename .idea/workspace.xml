@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71197edc-a188-4544-858b-4baf566afe80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/quests/static/quests/quest_styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quests/templates/quests.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/quests/quest_styles.b5553f71253c.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/quests/quest_styles.b5553f71253c.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/quests/quest_styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/quests/quest_styles.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quests/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quests/migrations/0003_queststage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dnd/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnd/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dnd/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnd/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quests/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/quests/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quests/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/quests/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/staticfiles.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -151,7 +148,8 @@
       <workItem from="1601567827506" duration="3481000" />
       <workItem from="1602322276814" duration="6399000" />
       <workItem from="1602337642907" duration="2501000" />
-      <workItem from="1602353644762" duration="3121000" />
+      <workItem from="1602353644762" duration="3167000" />
+      <workItem from="1602440175323" duration="2301000" />
     </task>
     <servers />
   </component>
@@ -194,5 +192,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="514" y="95" width="974" height="1047" key="dock-window-1/0.0.1920.1040/1920.0.1050.1640@0.0.1920.1040" timestamp="1597338713266" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602440601886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1050.1640@0.0.1920.1040" timestamp="1602440601886" />
   </component>
 </project>
